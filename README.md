@@ -45,23 +45,23 @@ Here are samples of each type of entry provided by the bibliography:
 ### Supervised Undergraduate Thesis
 ```tex
 @techreport{Kotelyanskii2014,
-  author                  = {Anton Kotelyanskii},
-  title                   = {A comparison of parameter optimization techniques as applied to search-based test data generation},
-  institution             = {Department of Computer Science, Allegheny College},
-  year                    = {2014},
-  number                  = {CS14-10},
-  type                    = {Technical report},
-  keywords                = {undergraduate}
+  author      = {Anton Kotelyanskii},
+  title       = {A comparison of parameter optimization techniques as applied to search-based test data generation},
+  institution = {Department of Computer Science, Allegheny College},
+  year        = {2014},
+  number      = {CS14-10},
+  type        = {Technical report},
+  keywords    = {undergraduate}
 }
 ```
 
 ### Supervised MSc or PhD Thesis
 ```tex
 @phdthesis{Walcott2012,
-  author                = {Kristen R. Walcott-Justice},
-  title                 = {Testing in resource-constrained environments},
-  school                = {Department of Computer Science, University of Virginia},
-  year                  = {2012},
+  author = {Kristen R. Walcott-Justice},
+  title  = {Testing in resource-constrained environments},
+  school = {Department of Computer Science, University of Virginia},
+  year   = {2012},
 }
 ```
 
