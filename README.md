@@ -3,7 +3,8 @@
 This repository contains a BibTeX file for all of the research papers, presentations, volumes edited, supervised theses,
 and supervised presentations of Gregory M. Kapfhammer. You are free to use any of the entries in this file if you are
 interested in citing one of these research deliverables in a LaTeX document. This repository is used in
-gkapfham/curriculum-vitae to create several sections of Gregory Kapfhammer's curriculum vitae in an automated fashion.
+*gkapfham/curriculum-vitae* to create several sections of Gregory Kapfhammer's curriculum vitae in an automated fashion.
+
 Here are samples of each type of entry provided by the bibliography:
 
 ### Research Paper
