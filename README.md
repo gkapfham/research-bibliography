@@ -26,3 +26,50 @@ Here are samples of each type of entry provided by the bibliography:
     addendum     = {Joint work with Jonathan Miller Kauffman and Mary Lou Soffa}
 }
 ```
+
+### Volume Edited
+```tex
+@article{Chan2011,
+    author   = {Wing-Kwong Chan and Christof J. Budnik and Gregory M. Kapfhammer and Hong Zhu},
+    journal  = {Software Quality Journal},
+    title    = {Special section: Exploring the boundaries of software test automation},
+    year     = {2011},
+    volume   = {19},
+    number   = {3},
+    keywords = {edit},
+}
+```
+
+### Supervised Undergraduate Thesis
+```tex
+@techreport{Kotelyanskii2014,
+  author                  = {Anton Kotelyanskii},
+  title                   = {A comparison of parameter optimization techniques as applied to search-based test data generation},
+  institution             = {Department of Computer Science, Allegheny College},
+  year                    = {2014},
+  number                  = {CS14-10},
+  type                    = {Technical report},
+  keywords                = {undergraduate}
+}
+```
+
+### Supervised MSc or PhD Thesis
+```tex
+@phdthesis{Walcott2012,
+  author                = {Kristen R. Walcott-Justice},
+  title                 = {Testing in resource-constrained environments},
+  school                = {Department of Computer Science, University of Virginia},
+  year                  = {2012},
+}
+```
+
+### Supervised Presentation
+```tex
+@misc{Geiger2007,
+  author        = {Joshua J. Geiger},
+  title         = {Avoiding database restarts with test suite prioritization},
+  howpublished  = {Undergraduate Research at the Capitol of Pennsylvania and Allegheny College Summer Research Symposium},
+  year          = {2007},
+  keywords      = {supervised}
+}
+```
