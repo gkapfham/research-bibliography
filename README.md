@@ -6,9 +6,21 @@ use any of the entries in this file if you are interested in citing one of these
 document. This repository is used in [gkapfham/curriculum-vitae](https://github.com/gkapfham/curriculum-vitae) to
 automatically create several sections of my curriculum vitae.
 
-Here are samples of each type of entry provided by the bibliography:
+#### Installation Instructions
 
-### Research Paper
+You can type the following command if you want to clone this repository:
+
+```shell
+git clone https://github.com/gkapfham/research-bibliography.git
+```
+
+Now, you can type `cd research-bibliography` and use the BibTeX file in your own LaTeX project. If you find that some of
+the entries are incorrectly formatted and thus your LaTeX and BibTeX tools are not processing them correctly, please
+open a new issue and I will attempt to resolve your concerns.
+
+### Bibliography Samples
+
+#### Research Paper
 ```tex
 @inproceedings{Wright2014,
     author    = {Chris J. Wright and Gregory M. Kapfhammer and Phil McMinn},
@@ -18,7 +30,7 @@ Here are samples of each type of entry provided by the bibliography:
 }
 ```
 
-### Research Presentation
+#### Research Presentation
 ```tex
 @misc{Kapfhammer2012pa,
     author       = {Gregory M. Kapfhammer},
@@ -29,7 +41,7 @@ Here are samples of each type of entry provided by the bibliography:
 }
 ```
 
-### Volume Edited
+#### Volume Edited
 ```tex
 @article{Chan2011,
     author   = {Wing-Kwong Chan and Christof J. Budnik and Gregory M. Kapfhammer and Hong Zhu},
@@ -42,7 +54,7 @@ Here are samples of each type of entry provided by the bibliography:
 }
 ```
 
-### Supervised Undergraduate Thesis
+#### Supervised Undergraduate Thesis
 ```tex
 @techreport{Kotelyanskii2014,
   author      = {Anton Kotelyanskii},
@@ -55,7 +67,7 @@ Here are samples of each type of entry provided by the bibliography:
 }
 ```
 
-### Supervised MSc or PhD Thesis
+#### Supervised MSc or PhD Thesis
 ```tex
 @phdthesis{Walcott2012,
   author = {Kristen R. Walcott-Justice},
@@ -65,7 +77,7 @@ Here are samples of each type of entry provided by the bibliography:
 }
 ```
 
-### Supervised Presentation
+#### Supervised Presentation
 ```tex
 @misc{Geiger2007,
   author        = {Joshua J. Geiger},
