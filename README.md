@@ -1,9 +1,10 @@
 # research-bibliography
 
 This repository contains a BibTeX file for all of the research papers, presentations, volumes edited, supervised theses,
-and supervised presentations of Gregory M. Kapfhammer. You are free to use any of the entries in this file if you are
-interested in citing one of these research deliverables in a LaTeX document. This repository is used in
-*gkapfham/curriculum-vitae* to create several sections of Gregory Kapfhammer's curriculum vitae in an automated fashion.
+and supervised presentations of me, [Gregory M. Kapfhammer](http://www.cs.allegheny.edu/sites/gkapfham). You are free to
+use any of the entries in this file if you are interested in citing one of these research deliverables in a LaTeX
+document. This repository is used in [gkapfham/curriculum-vitae](https://github.com/gkapfham/curriculum-vitae) to
+automatically create several sections of my curriculum vitae.
 
 Here are samples of each type of entry provided by the bibliography:
 
