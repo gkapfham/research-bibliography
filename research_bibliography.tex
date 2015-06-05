@@ -31,7 +31,6 @@
 \DeclareFieldFormat[article]{title}{\mkbibquote{#1\addcomma}}
 \DeclareFieldFormat[inproceedings]{title}{\mkbibquote{#1\addcomma}}
 \DeclareFieldFormat[incollection]{title}{\mkbibquote{#1\addcomma}}
-
 \printbibliography[filter=papers,title={Publications}]
 
 % RESEARCH PRESENTATIONS:
@@ -40,7 +39,15 @@
   not keyword=supervised
 }
 \DeclareFieldFormat[misc]{title}{\mkbibquote{#1\addcomma}}
-
 \printbibliography[filter=presentations,title={Presentations}]
+
+% VOLUMES EDITED:
+\defbibfilter{volumesedited}{
+  type=article and
+  keyword=edit
+}
+\DeclareFieldFormat[misc]{title}{\mkbibquote{#1\addcomma}}
+\printbibliography[filter=volumesedited,title={Volumes Edited}]
+
 
 \end{document}
