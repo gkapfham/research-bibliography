@@ -49,5 +49,24 @@
 \DeclareFieldFormat[misc]{title}{\mkbibquote{#1\addcomma}}
 \printbibliography[filter=volumesedited,title={Volumes Edited}]
 
+% SUPERVISED THESES
+\defbibfilter{theses}{
+  type=report or
+  type=thesis or
+  keyword=undergraduate
+}
+\DeclareFieldFormat[report]{addendum}{\addcomma\addspace#1\nopunct}
+\DeclareFieldFormat[report]{title}{\mkbibquote{#1\addcomma}}
+\DeclareFieldFormat[thesis]{title}{\mkbibquote{#1\addcomma}}
+\DeclareFieldFormat[report]{number}{#1\addcomma}
+\printbibliography[filter=theses,title={Supervised Theses}]
+
+% SUPERVISED RESEARCH PRESENTATIONS:
+\defbibfilter{supervise}{
+  type=misc and
+  keyword=supervised
+}
+\DeclareFieldFormat[misc]{title}{\mkbibquote{#1\addcomma}}
+\printbibliography[filter=supervise,title={Supervised Presentations}]
 
 \end{document}
