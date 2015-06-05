@@ -1,0 +1,37 @@
+\documentclass{minimal}
+
+\usepackage[url=false,
+    backend=biber,
+    style=authoryear,
+    doi=false,
+    isbn=false,
+    backref=false,
+    dashed=false,                                   % Do not add a dash out authors for subsequent articles with the same authors.
+    maxnames=99,                                    % Amount of authors to include before abbreviating.
+    sorting=ydnt]{biblatex}                         % Sorting in reverse order
+\renewbibmacro{in:}{}
+
+\addbibresource{bibtex/bibliography_kapfhammer.bib}
+
+\begin{document}
+
+% Print all publications
+\nocite{*}
+
+% RESEARCH PAPERS:
+\defbibfilter{papers}{
+  type=article or
+  type=inproceedings or
+  type=incollection and
+  not keyword=edit
+}
+\DeclareFieldFormat[article]{volume}{\addcomma\addspace#1\nopunct}
+\DeclareFieldFormat[article]{number}{(#1)}
+\DeclareFieldFormat[inproceedings]{booktitle}{in \em{#1}}
+\DeclareFieldFormat[article]{title}{\mkbibquote{#1\addcomma}}
+\DeclareFieldFormat[inproceedings]{title}{\mkbibquote{#1\addcomma}}
+\DeclareFieldFormat[incollection]{title}{\mkbibquote{#1\addcomma}}
+
+\printbibliography[filter=papers,title={Publications}]
+
+\end{document}
