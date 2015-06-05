@@ -34,4 +34,13 @@
 
 \printbibliography[filter=papers,title={Publications}]
 
+% RESEARCH PRESENTATIONS:
+\defbibfilter{presentations}{
+  type=misc and
+  not keyword=supervised
+}
+\DeclareFieldFormat[misc]{title}{\mkbibquote{#1\addcomma}}
+
+\printbibliography[filter=presentations,title={Presentations}]
+
 \end{document}
