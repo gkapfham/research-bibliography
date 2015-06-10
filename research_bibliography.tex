@@ -13,6 +13,17 @@
 
 \addbibresource{bibtex/bibliography_kapfhammer.bib}
 
+\usepackage{pifont}
+\usepackage[geometry]{ifsym}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage{microtype}
+
+\newcommand{\gospace}{$\;$}
+\newcommand{\gosecond}{$^{\mbox{\ding{63}}}$}
+\newcommand{\gofaculty}{$^{\mbox{\ding{81}}}$}
+\newcommand{\goacm}{$^{\mbox{\ding{169}}}$}
+
 \begin{document}
 
 % Print all publications
@@ -58,7 +69,7 @@
 \DeclareFieldFormat[report]{addendum}{\addcomma\addspace#1\nopunct}
 \DeclareFieldFormat[report]{title}{\mkbibquote{#1\addcomma}}
 \DeclareFieldFormat[thesis]{title}{\mkbibquote{#1\addcomma}}
-\DeclareFieldFormat[thesis]{type}{#1\addcomma}}
+\DeclareFieldFormat[thesis]{type}{#1\addcomma}
 \DeclareFieldFormat[report]{number}{#1\addcomma}
 \printbibliography[filter=theses,title={Supervised Theses}]
 
