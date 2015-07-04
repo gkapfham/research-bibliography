@@ -27,7 +27,8 @@ pdflatex research_bibliography.tex
 ```
 
 If you find that some of the entries are incorrectly formatted and thus your LaTeX and BibTeX tools are not processing
-them correctly, please open a new issue and I will attempt to resolve your concerns.
+them correctly, please open a new issue and I will attempt to resolve your concerns.  If you find this repository
+useful, then I hope that you will star it.
 
 ### Bibliography Samples
 
