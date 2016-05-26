@@ -15,7 +15,7 @@ git clone https://github.com/gkapfham/research-bibliography.git
 ```
 
 Now, you can type `cd research-bibliography` and use the BibTeX file in your own LaTeX project.  Alternatively, a
-document that cites all of the entries in this bibliography can be compiled on an Ubuntu 14.04 LTS workstation using
+document that cites all of the entries in this bibliography can be compiled on an Ubuntu 15.04 LTS workstation using
 `pdflatex` and `biber`; you may also compile to a PDF file using a wide variety of other tools, such as `latexmk`. You
 can type the following commands to create the summary document.
 
