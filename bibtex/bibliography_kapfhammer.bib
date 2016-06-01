@@ -46,7 +46,22 @@
     author    = {Phil McMinn and Gregory M. Kapfhammer and Chris J. Wright},
     title     = {Virtual mutation analysis of relational database schemas},
     booktitle = {Proceedings of the 11th International Workshop on Automation of Software Test},
-    year      = {2016}
+    year      = {2016},
+    abstract  = {Relational databases are a vital component of many modern software applications. Key to the definition
+                 of the database schema --- which specifies what types of data will be stored in the database and the
+                 structure in which the data is to be organized --- are integrity constraints. Integrity constraints are
+                 conditions that protect and preserve the consistency and validity of data in the database, preventing
+                 data values that violate their rules from being admitted into database tables. They encode logic about
+                 the application concerned, and like any other component of a software application, need to be properly
+                 tested. Mutation analysis is a technique that has been successfully applied to integrity constraint
+                 testing, seeding database schema faults of both omission and commission. Yet, as for traditional
+                 mutation analysis for program testing, it is costly to perform, since the test suite under analysis
+                 needs to be run against each individual mutant to establish whether or not it exposes the fault. One
+                 overhead incurred by database schema mutation is the cost of communicating with the database management
+                 system (DBMS). In this paper, we seek to eliminate this cost by performing mutation analysis virtually
+                 on a local model of the DBMS, rather than on an actual, running instance hosting a real database. We
+                 present an empirical evaluation of our virtual technique revealing that, across all of the studied
+                 DBMSs and schemas, the virtual method yields an average time saving of 51% over the baseline.}
 }
 
 @inproceedings{Kinneer2015,
