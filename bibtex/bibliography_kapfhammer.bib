@@ -215,7 +215,20 @@
     author    = {Gregory M. Kapfhammer and Phil McMinn and Chris J. Wright},
     title     = {Search-based testing of relational schema integrity constraints across multiple database management systems},
     booktitle = {Proceedings of the 6th International Conference on Software Testing, Verification and Validation},
-    year      = {2013}
+    year      = {2013},
+    abstract  = {There has been much attention to testing applications that interact with database management systems,
+                 and the testing of individual database management systems themselves. However, there has been very
+                 little work devoted to testing arguably the most important artefact involving an application supported
+                 by a relational database --- the underlying schema. This paper introduces a search-based technique
+                 for generating database table data with the intention of exercising the integrity constraints placed on
+                 table columns. The development of a schema is a process open to flaws like any stage of application
+                 development. Its cornerstone nature to an application means that defects need to be found early in
+                 order to prevent knock-on effects to other parts of a project and the spiralling bug-fixing costs that
+                 may be incurred. Examples of such flaws include incomplete primary keys, incorrect foreign keys, and
+                 omissions of NOT NULL declarations.  Using mutation analysis, this paper presents an empirical study
+                 evaluating the effectiveness of our proposed technique and comparing it against a popular tool for
+                 generating table data, DBMonster. With competitive or faster data generation times, our method
+                 outperforms DBMonster in terms of both constraint coverage and mutation score.}
 }
 
 @inproceedings{Wright2013,
@@ -520,20 +533,20 @@
             meet rapidly changing user requirements. New test cases will be designed to ensure the correctness of new or
             modified functions, thus gradually increasing the test suite’s size. Test suite reduction techniques aim to
             decrease the cost of regression testing by removing the redundant test cases from the test suite and then
-            obtaining a representative set of test cases that still yield a high level of code coverage. <br>
+            obtaining a representative set of test cases that still yield a high level of code coverage. <p>
             <em>Objective</em>: Most of the existing reduction algorithms focus on decreasing the test suite’s size.
             Yet, the differences in execution costs among test cases are usually significant and it may take a lot of
             execution time to run a test suite consisting of a few long-running test cases. This paper presents and
             empirically evaluates cost-aware algorithms that can produce the representative sets with lower execution
-            costs. <p> <br> <em>Method</em>: We first use a cost-aware test case metric, called Irreplaceability, and its
+            costs. <p> <em>Method</em>: We first use a cost-aware test case metric, called Irreplaceability, and its
             enhanced version, called EIrreplaceability, to evaluate the possibility that each test case can be replaced
             by others during test suite reduction. Furthermore, we construct a cost-aware framework that incorporates
-            the concept of test irreplaceability into some well-known test suite reduction algorithms.  <br>
+            the concept of test irreplaceability into some well-known test suite reduction algorithms.  <p>
             <em>Results</em>: The effectiveness of the cost-aware framework is evaluated via the subject programs and
             test suites collected from the Software-artifact Infrastructure Repository --- frequently chosen benchmarks
             for experimentally evaluating test suite reduction methods. The empirical results reveal that the presented
             algorithms produce representative sets that normally incur a low cost to yield a high level of test
-            coverage.  <br> <em>Conclusion</em>: The presented techniques indeed enhance the capability of the
+            coverage.  <p> <em>Conclusion</em>: The presented techniques indeed enhance the capability of the
             traditional reduction algorithms to reduce the execution cost of a test suite. Especially for the additional
             Greedy algorithm, the presented techniques decrease the costs of the representative sets by 8.10 -- 46.57%}
 }
