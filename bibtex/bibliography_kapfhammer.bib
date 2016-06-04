@@ -122,14 +122,36 @@
     author    = {Cody Kinneer and Gregory M. Kapfhammer and Chris J. Wright and Phil McMinn},
     title     = {Automatically evaluating the efficiency of search-based test data generation for relational database schemas},
     booktitle = {Proceedings of the 27th International Conference on Software Engineering and Knowledge Engineering},
-    year      = {2015}
+    year      = {2015},
+    abstract  = {The characterization of an algorithm's worst-case time complexity is useful because it succinctly
+                 captures how its runtime will grow as the input size becomes arbitrarily large.  However, for certain
+                 algorithms --- such as those performing search-based test data generation --- a theoretical
+                 analysis to determine worst-case time complexity is difficult to generalize and thus not often reported
+                 in the literature.  This paper introduces a framework that empirically determines an algorithm's
+                 worst-case time complexity by doubling the size of the input and observing the change in runtime.
+                 Since the relational database is a centerpiece of modern software and the database's schema is
+                 frequently untested, we apply the doubling technique to the domain of data generation for relational
+                 database schemas, a field where worst-case time complexities are often unknown. In addition to
+                 demonstrating the feasibility of suggesting the worst-case runtimes of the chosen algorithms and
+                 configurations, the results of our study reveal performance trade-offs in testing strategies for
+                 relational database schemas.}
 }
 
 @inproceedings{Kinneer2015a,
     author    = {Cody Kinneer and Gregory M. Kapfhammer and Chris J. Wright and Phil McMinn},
     title     = {expOse: {I}nferring worst-case time complexity by automatic empirical study},
     booktitle = {Proceedings of the 27th International Conference on Software Engineering and Knowledge Engineering},
-    year      = {2015}
+    year      = {2015},
+    abstract  = {A useful understanding of an algorithm's efficiency, the worst-case time complexity gives an upper
+                 bound on how an increase in the size of the input, denoted n, increases the execution time of the
+                 algorithm, or f(n).  This relationship is often expressed in the "big-Oh" notation, where f(n) is
+                 O(g(n)) means that the time increases by no more than on order of g(n). Since the worst-case complexity
+                 of an algorithm is evident when n is large, one approach for determining the big-Oh complexity of an
+                 algorithm is to conduct a doubling experiment with increasingly bigger input sizes. By measuring the
+                 time needed to run the algorithm on inputs of size n and 2n, the algorithm's order of growth can be
+                 determined.  This paper introduces expOse, a tool to derive an "EXPerimental big-Oh" for supporting
+                 "Scalability Evaluation" --- expOse infers an algorithm's big-Oh order of growth by conducting a
+                 doubling experiment automatically.}
 }
 
 @inproceedings{Walsh2015,
