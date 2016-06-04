@@ -176,14 +176,39 @@
     author    = {Chris J. Wright and Gregory M. Kapfhammer and Phil McMinn},
     title     = {The impact of equivalent, redundant, and quasi mutants on database schema mutation analysis},
     booktitle = {Proceedings of the 14th International Conference on Quality Software},
-    year      = {2014}
+    year      = {2014},
+    abstract  = {Since the relational database is an important component of real-world software and the schema plays a
+                 major role in ensuring the quality of the database, relational schema testing is essential.  This paper
+                 presents methods for improving both the efficiency and accuracy of mutation analysis, an established
+                 method for assessing the quality of test cases for database schemas.  Using a DBMS-independent abstract
+                 representation, the presented techniques automatically identify and remove mutants that are either
+                 equivalent to the original schema, redundant with respect to other mutants, or undesirable because they
+                 are only valid for certain database systems. Applying our techniques for ineffective mutant removal to
+                 a variety of schemas, many of which are from real-world sources like the U.S. Department of Agriculture
+                 and the Stack Overflow website, reveals that the presented static analysis of the DBMS-independent
+                 representation is multiple orders of magnitude faster than a DBMS-specific method. The results also
+                 show increased mutation scores in 75% of cases, with 44% of those uncovering a mutation-adequate test
+                 suite. Combining the presented techniques yields mean efficiency improvements of up to 33.7%, with
+                 averages across schemas of 1.6% and 11.8% for HyperSQL and PostgreSQL, respectively.}
 }
 
 @inproceedings{Kotelyanskii2014a,
     author    = {Anton Kotelyanskii and Gregory M. Kapfhammer},
     title     = {Parameter tuning for search-based test-data generation revisited: Support for previous results},
     booktitle = {Proceedings of the 14th International Conference on Quality Software},
-    year      = {2014}
+    year      = {2014},
+    abstract  = {Although search-based test-data generators, like EvoSuite, efficiently and automatically create
+                 effective JUnit test suites for Java classes, these tools are often difficult to configure. Prior work
+                 by Arcuri and Fraser revealed that the tuning of EvoSuite with response surface methodology (RSM)
+                 yielded a configuration of the test data generator that did not outperform the default configuration.
+                 Following the experimental design and protocol described by Arcuri and Fraser, this paper presents the
+                 results of a study that lends further support to prior results: like RSM, the EvoSuite configuration
+                 identified by the well-known Sequential Parameter Optimization Toolbox (SPOT) failed to significantly
+                 outperform the default settings.  Although this result is negative, it furnishes further empirical
+                 evidence of the challenge associated with tuning a complex search-based test data generator.  Moreover,
+                 the outcomes of the presented experiments also suggests that EvoSuite's default parameters have been
+                 set by experts in the field and are thus suitable for use in future experimental studies and industrial
+                 testing efforts.}
 }
 
 @inproceedings{Kapfhammer2013,
