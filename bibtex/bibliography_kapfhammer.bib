@@ -487,7 +487,26 @@
   journal = {Transactions on Software Engineering and Methodology},
   volume  = {25},
   number  = {1},
-  year    = {2015}
+  year    = {2015},
+  abstract = {Despite industry advice to the contrary, there has been little work that has sought to test that a
+              relational database's schema has correctly specified integrity constraints. These critically important
+              constraints ensure the coherence of data in a database, defending it from manipulations that could violate
+              requirements such as "usernames must be unique" or "the host name cannot be missing or unknown". This
+              paper is the first to propose coverage criteria, derived from logic coverage criteria, that establish
+              different levels of testing for the formulation of integrity constraints in a database schema. These range
+              from simple criteria that mandate the testing of successful and unsuccessful INSERT statements into tables
+              to more advanced criteria that test the formulation of complex integrity constraints such as multi-column
+              PRIMARY KEYS and arbitrary CHECK constraints. Due to different vendor interpretations of the structured
+              query language (SQL) specification with regard to how integrity constraints should actually function in
+              practice, our criteria crucially account for the underlying semantics of the database management system
+              (DBMS).  After formally defining these coverage criteria and relating them in a subsumption hierarchy, we
+              present two approaches to automatically generating tests that satisfy the criteria.  We then describe the
+              results of an empirical study that uses mutation analysis to investigate the fault-finding capability of
+              data generated when our coverage criteria are applied to a wide variety of relational schemas hosted by
+              three well-known and representative DBMSs --- HyperSQL, PostgreSQL and SQLite.  In addition to revealing
+              the complementary fault-finding capabilities of the presented criteria, the results show that mutation
+              scores range from as low as just 12\% of mutants being killed with the simplest of criteria to 96\% with
+              the most advanced.}
 }
 
 @article{Lin2014,
@@ -496,7 +515,27 @@
  journal = {Information and Software Technology},
  volume  = {56},
  number  = {10},
- year    = {2014}
+ year    = {2014},
+ abstract = {<em>Context</em>: In software development and maintenance, a software system may frequently be updated to
+            meet rapidly changing user requirements. New test cases will be designed to ensure the correctness of new or
+            modified functions, thus gradually increasing the test suite’s size. Test suite reduction techniques aim to
+            decrease the cost of regression testing by removing the redundant test cases from the test suite and then
+            obtaining a representative set of test cases that still yield a high level of code coverage. <br>
+            <em>Objective</em>: Most of the existing reduction algorithms focus on decreasing the test suite’s size.
+            Yet, the differences in execution costs among test cases are usually significant and it may take a lot of
+            execution time to run a test suite consisting of a few long-running test cases. This paper presents and
+            empirically evaluates cost-aware algorithms that can produce the representative sets with lower execution
+            costs.  <br> <em>Method</em>: We first use a cost-aware test case metric, called Irreplaceability, and its
+            enhanced version, called EIrreplaceability, to evaluate the possibility that each test case can be replaced
+            by others during test suite reduction. Furthermore, we construct a cost-aware framework that incorporates
+            the concept of test irreplaceability into some well-known test suite reduction algorithms.  <br>
+            <em>Results</em>: The effectiveness of the cost-aware framework is evaluated via the subject programs and
+            test suites collected from the Software-artifact Infrastructure Repository --- frequently chosen benchmarks
+            for experimentally evaluating test suite reduction methods. The empirical results reveal that the presented
+            algorithms produce representative sets that normally incur a low cost to yield a high level of test
+            coverage.  <br> <em>Conclusion</em>: The presented techniques indeed enhance the capability of the
+            traditional reduction algorithms to reduce the execution cost of a test suite. Especially for the additional
+            Greedy algorithm, the presented techniques decrease the costs of the representative sets by 8.10 -- 46.57%}
 }
 
 @article{Burdette2012,
