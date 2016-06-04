@@ -232,10 +232,22 @@
 }
 
 @inproceedings{Wright2013,
-  author    = "Chris J. Wright and Gregory M. Kapfhammer and Phil McMinn",
-  title     = "Efficient mutation analysis of relational database structure using mutant schemata and parallelisation",
-  booktitle = "Proceedings of the 8th International Workshop on Mutation Analysis",
-  year      = "2013"
+  author    = {Chris J. Wright and Gregory M. Kapfhammer and Phil McMinn},
+  title     = {Efficient mutation analysis of relational database structure using mutant schemata and parallelisation},
+  booktitle = {Proceedings of the 8th International Workshop on Mutation Analysis},
+  year      = {2013}
+  abstract  = {Mutation analysis is an effective way to assess the quality of input values and test oracles. Yet, since
+               this technique requires the generation and execution of many mutants, it often incurs a substantial
+               computational cost. In the context of program mutation, the use of mutant schemata and parallelisation
+               can reduce the costs of mutation analysis. This paper is the first to apply these approaches to the
+               mutation analysis of a relational database schema, arguably one of the most important artefacts in a
+               database application. Using a representative set of case studies that vary in both their purpose and
+               structure, this paper empirically compares an unoptimised method to four database structure mutation
+               techniques that intelligently employ both mutant schemata and parallelisation. The results of the
+               experimental study highlight the performance trade-offs that depend on the type of database management
+               system (DBMS), underscoring the fact that every DBMS does not support all types of efficient mutation
+               analysis. However, the experiments also identify a method that yields a one to ten times reduction in the
+               cost of mutation analysis for relational schemas hosted by both the Postgres and SQLite DBMSs.}
 }
 
 @inproceedings{Lin2013,
@@ -243,6 +255,18 @@
  title     = {History-based test case prioritization with software version awareness},
  booktitle = {Proceedings of the 18th International Conference on Engineering of Complex Computer Systems},
  year      = {2013}
+ abstract  = {Test case prioritization techniques schedule the test cases in an order based on some specific criteria so
+              that the tests with better fault detection capability are executed at an early position in the regression
+              test suite. Many existing test case prioritization approaches are code-based, in which the testing of each
+              software version is considered as an independent process. Actually, the test results of the preceding
+              software versions may be useful for scheduling the test cases of the later software versions. Some
+              researchers have proposed history-based approaches to address this issue, but they assumed that the
+              immediately preceding test result provides the same reference value for prioritizing the test cases of the
+              successive software version across the entire lifetime of the software development process. Thus, this
+              paper describes ongoing research that studies whether the reference value of the immediately preceding
+              test results is version-aware and proposes a test case prioritization approach based on our observations.
+              The experimental results indicate that, in comparison to existing approaches, the presented one can
+              schedule test cases more effectively.}
 }
 
 @inproceedings{Just2012a,
