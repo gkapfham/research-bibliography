@@ -535,21 +535,57 @@
   title     = {Empirically studying the role of selection operators during search-based test suite prioritization},
   booktitle = {Proceedings of the 12th International Conference on Genetic and Evolutionary Computation},
   year      = {2010},
-  keywords  = {award}
+  keywords  = {award},
+  abstract  = {Regression test suite prioritization techniques reorder test cases so that, on average, more faults will
+               be revealed earlier in the test suite's execution than would otherwise be possible. This paper presents a
+               genetic algorithm-based test prioritization method that employs a wide variety of mutation, crossover,
+               selection, and transformation operators to reorder a test suite. Leveraging statistical analysis
+               techniques, such as tree model construction through binary recursive partitioning and kernel density
+               estimation, the paper's empirical results highlight the unique role that the selection operators play in
+               identifying an effective ordering of a test suite. The study also reveals that, while truncation
+               selection consistently outperformed the tournament and roulette operators in terms of test suite
+               effectiveness, increasing selection pressure consistently produces the best results within each class of
+               operator. After further explicating the relationship between selection intensity, termination condition,
+               fitness landscape, and the quality of the resulting test suite, this paper demonstrates that the genetic
+               algorithm-based prioritizer is superior to random search and hill climbing and thus suitable for many
+               regression testing environments.},
+  tool       = {https://github.com/gkapfham/gelations/},
+  presented  = {true}
 }
 
 @inproceedings{Kukunas2010a,
   author    = {Kukunas, James and Cupper, Robert D. and Kapfhammer, Gregory M.},
   title     = {A genetic algorithm to improve Linux kernel performance on resource-constrained devices},
   booktitle = {Proceedings of the 12th International Conference Companion on Genetic and Evolutionary Computation},
-  year      = {2010}
+  year      = {2010},
+  abstract  = {As computers become increasingly mobile, users demand more functionality, longer battery-life, and better
+               performance from mobile devices. In response, chipset fabricators are focusing on elegant architectures
+               to provide solutions that are both low-power and high-performance. Since these architectures rely on
+               unique x86 extensions rather than fast clock speeds and large caches, careful thought must be placed into
+               effective optimization strategies for not only user applications, but also the kernel itself, as the
+               typical default optimizations used by modern compilers do not often take advantage of these specialized
+               features. Focusing on the Intel Diamondville platform, this paper presents a genetic algorithm that
+               evolves the compiler flags needed to build a Linux kernel that exhibits reduced response times.},
+  presented  = {true}
 }
 
 @inproceedings{Williams2010,
   author    = {Zachary Williams and Gregory M. Kapfhammer},
   title     = {Using synthetic test suites to empirically compare search-based and greedy prioritizers},
   booktitle = {Proceedings of the 12th International Conference Companion on Genetic and Evolutionary Computation},
-  year      = {2010}
+  year      = {2010},
+  abstract  = {The increase in the complexity of modern software has led to the commensurate growth in the size and
+               execution time of the test suites for these programs. In order to address this alarming trend, developers
+               use test suite prioritization to reorder the test cases so that faults can be detected at an early stage
+               of testing. Yet, the implementation and evaluation of greedy and search-based test prioritizers requires
+               access to case study applications and their associated test suites, which are often difficult to find,
+               configure, and use in an empirical study. This paper presents two types of synthetically generated test
+               suites that support this process of experimentally evaluating prioritization methods. Using synthetic
+               test suites affords greater control over test case characteristics and supports the identification of
+               empirical trends that contradict the established wisdom about search-based and greedy prioritization. For
+               instance, we find that the hill climbing algorithm often exhibits a lower time overhead than the greedy
+               test suite prioritizer while producing test orderings with comparable effectiveness scores.},
+  presented  = {true}
 }
 
 @inproceedings{Smith2009,
