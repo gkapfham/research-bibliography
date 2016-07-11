@@ -311,6 +311,20 @@
   title     = {Do redundant mutants affect the effectiveness and efficiency of mutation analysis?},
   booktitle = {Proceedings of the 7th International Workshop on Mutation Analysis},
   year      = {2012},
+  abstract  = {Mutation analysis is an unbiased and powerful method for assessing input values and test oracles.
+               However, in comparison to other techniques, such as those that rely on code coverage, it is a
+               computationally-expensive and time-consuming method, especially for large software systems. This high
+               cost is due, in part, to the fact that many mutation operators generate redundant mutants that may both
+               misrepresent the mutation score and increase the runtime of the mutation analysis process. After showing
+               how the conditional operator replacement (COR) mutation operator can be defined in a redundant-free
+               manner, this paper uses four real-world programs, ranging in size from 3,000 to nearly 40,000 lines of
+               code, to show the prevalence of redundant mutants. Focusing on the conditional operator replacement (COR)
+               and relational operator replacement (ROR) mutation operators that create 41% of all mutants in the chosen
+               programs, the case study reveals that the removal of redundant mutants reduces the runtime of mutation
+               analysis by up to 34%. Additional empirical results show that redundant mutants can lead to a mutation
+               score that is misleadingly overestimated by as much as 10%. Overall, this paper convincingly demonstrates
+               that it is possible to improve the effectiveness and efficiency of a mutation analysis system by
+               identifying and removing redundant mutants.},
   presented = {true}
 }
 
@@ -318,7 +332,22 @@
   author    = {Ren\'{e} Just and Gregory M. Kapfhammer and Franz Schweiggert},
   title     = {Using non-redundant mutation operators and test suite prioritization to achieve efficient and scalable mutation analysis},
   booktitle = {Proceedings of the 23rd International Symposium on Software Reliability Engineering},
-  year      = {2012}
+  year      = {2012},
+  abstract  = {Mutation analysis is a powerful and unbiased technique to assess the quality of input values and test
+               oracles. However, its application domain is still limited due to the fact that it is a time consuming and
+               computationally expensive method, especially when used with large and complex software systems.
+               Addressing these challenges, this paper makes several contributions to significantly improve the
+               efficiency of mutation analysis. First, it investigates the decrease in generated mutants by applying a
+               reduced, yet sufficient, set of mutants for replacing conditional (COR) and relational (ROR) operators.
+               The analysis of ten real-world applications, with 400,000 lines of code and more than 550,000 generated
+               mutants in total, reveals a reduction in the number of mutants created of up to 37% and more than 25% on
+               average. Yet, since the isolated use of non-redundant mutation operators does not ensure that mutation
+               analysis is efficient and scalable, this paper also presents and experimentally evaluates an optimized
+               workflow that exploits the redundancies and runtime differences of test cases to reorder and split the
+               corresponding test suite. Using the same ten open-source applications, an empirical study convincingly
+               demonstrates that the combination of non- redundant operators and prioritization leveraging information
+               about the runtime and mutation coverage of tests reduces the total cost of mutation analysis further by
+               as much as 65%.}
 }
 
 @inproceedings{Kauffman2012a,
@@ -326,6 +355,15 @@
   title     = {A framework to support research in and encourage industrial adoption of regression testing techniques},
   booktitle = {Proceedings of the 7th Testing: Academic and Industrial Conference -- Practice and Research Techniques},
   year      = {2012},
+  abstract  = {When software developers make changes to a program, it is possible that they will introduce faults into
+               previously working parts of the code. As software grows, a regression test suite is run to ensure that
+               the old functionality still works as expected. Yet, as the number of test cases increases, it becomes
+               more expensive to execute the test suite. Reduction and prioritization techniques enable developers to
+               manage large and unwieldy test suites. However, practitioners and researchers do not always use and study
+               these methods due, in part, to a lack of availability. In response to this issue, this paper describes an
+               already released open-source framework that supports both research and practice in regression testing.
+               The sharing of this framework will enable the replication of empirical studies in regression testing and
+               encourage faster industrial adoption of these useful, yet rarely used, techniques.},
   presented = {true}
 }
 
@@ -334,6 +372,14 @@
   title     = {Towards a method for reducing the test suites of database applications},
   booktitle = {Poster Compendium of the 5th International Conference on Software Testing, Verification and Validation},
   year      = {2012},
+  abstract  = {Database applications are commonly implemented and used in both industry and academia. These complex and
+               rapidly evolving applications often have frequent changes in the source code of the program and the state
+               and structure of the database. This paper describes and empirically evaluates a test suite reduction
+               technique that improves the efficiency of regression testing for database applications by removing
+               redundant tests. The experimental results show that the reduced test suites are between 30% and 80%
+               smaller than the original test suite, thus enabling a decrease in testing time ranging from 7% to 78%.
+               These empirical outcomes suggest that test suite reduction is a viable method for controlling the costs
+               associated with testing rapidly-evolving database applications.},
   presented = {true}
 }
 
@@ -349,7 +395,19 @@
   author    = {Clark, Sarah R. and Cobb, Jake and Kapfhammer, Gregory M. and Jones, James A. and Harrold, Mary Jean},
   title     = {Localizing SQL faults in database applications},
   booktitle = {Proceedings of the 26th International Conference on Automated Software Engineering},
-  year      = {2011}
+  year      = {2011},
+  abstract  = {This paper presents a new fault-localization technique designed for applications that interact with a
+               relational database. The technique uses dynamic information specific to the application's database, such
+               as Structured Query Language (SQL) commands, to provide a fault-location diagnosis. By creating
+               statement-SQL tuples and calculating their suspiciousness, the presented method lets the developer
+               identify the database commands and the program statements likely to cause the failures. The technique
+               also calculates suspiciousness for statement-attribute tuples and uses this information to identify SQL
+               fragments that are statistically likely to be responsible for the suspiciousness of that SQL command. The
+               paper reports the results of two empirical studies. The first study compares existing and database-aware
+               fault-localization methods, and reveals the strengths and limitations of prior techniques, while also
+               highlighting the effectiveness of the new approach. The second study demonstrates the benefits of using
+               database information to improve understanding and reduce manual debugging effort.},
+  presented = {true}
 }
 
 @inproceedings{Just2011,
@@ -638,7 +696,18 @@
   year    = {2012},
   month   = {April},
   volume  = {39},
-  number  = {4}
+  number  = {4},
+  abstract = {This paper presents a benchmarking suite that measures the performance of using sockets and eXtensible
+              Markup Language remote procedure calls (XML-RPC) to exchange intra-node messages between Java virtual
+              machines (JVMs). The paper also reports on an empirical study comparing sockets and XML-RPC with response
+              time measurements from timers that use both operating system tools and Java language instrumentation. By
+              leveraging packet filters inside the GNU/Linux kernel, the benchmark suite also calculates network
+              resource consumption. Moreover, the framework interprets the response time results in light of memory
+              subsystem metrics characterizing the behavior of the JVM. The empirical findings indicate that sockets
+              perform better when transmitting small to very large objects, while XML-RPC exhibits lower response time
+              than sockets with extremely large bulk data transfers. The experiments reveal trade-offs in performance
+              and thus represent the first step towards determining if Java remote communication primitives can support
+              the efficient exchange of intra-node messages.}
 }
 
 @article{Fiedler2005,
