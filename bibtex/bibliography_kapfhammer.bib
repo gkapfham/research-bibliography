@@ -592,14 +592,42 @@
   author    = {Smith, Adam M. and Kapfhammer, Gregory M.},
   title     = {An empirical study of incorporating cost into test suite reduction and prioritization},
   booktitle = {Proceedings of the 24th Symposium on Applied Computing},
-  year      = {2009}
+  year      = {2009},
+  abstract  = {Software developers use testing to gain and maintain confidence in the correctness of a software system.
+               Automated reduction and prioritization techniques attempt to decrease the time required to detect faults
+               during test suite execution. This paper uses the Harrold Gupta Soffa, delayed greedy, traditional greedy,
+               and 2-optimal greedy algorithms for both test suite reduction and prioritization. Even though reducing
+               and reordering a test suite is primarily done to ensure that testing is cost-effective, these algorithms
+               are normally configured to make greedy choices with coverage information alone. This paper extends these
+               algorithms to greedily reduce and prioritize the tests by using both test cost (e.g., execution time) and
+               the ratio of code coverage to test cost. An empirical study with eight real world case study applications
+               shows that the ratio greedy choice metric aids a test suite reduction method in identifying a smaller and
+               faster test suite. The results also suggest that incorporating test cost during prioritization allows for
+               an average increase of 17% and a maximum improvement of 141% for a time sensitive evaluation metric
+               called coverage effectiveness.},
+  tool       = {https://github.com/gkapfham/raise},
+  presented  = {true}
 }
 
 @inproceedings{Bhadra2009,
   author    = {Suvarshi Bhadra and Alexander P. Conrad and Charles P. Hurkes and Brian Kirklin and Gregory M. Kapfhammer},
   title     = {An experimental study of methods for executing test suites in memory constrained environments},
   booktitle = {Proceedings of the 4th International Workshop on the Automation of Software Test},
-  year      = {2009}
+  year      = {2009},
+  abstract  = {Software for memory constrained mobile devices is often implemented in the Java programming language
+               because the Java compiler and virtual machine (JVM) provide enhanced safety, portability, and the
+               potential for run-time optimization. However, testing time may increase substantially when memory is
+               limited and the JVM employs a compiler to create native code bodies. This paper furnishes an empirical
+               study that identifies the fundamental trade-offs associated with a method that uses adaptive native code
+               unloading to perform memory constrained testing. The experimental results demonstrate that code unloading
+               can reduce testing time by 17% and the code size of the test suite and application under test by 68%
+               while maintaining the overall size of the JVM. We also find that the goal of reducing the space overhead
+               of an automated testing technique is often at odds with the objective of decreasing the time required to
+               test. Additional experiments reveal that using a complete record of test suite behavior, in contrast to a
+               sample-based profile, does not enable the code unloader to make decisions that markedly reduce testing
+               time. Finally, we identify test suite and application behaviors that may limit the effectiveness of our
+               method for memory constrained test execution and we suggest ways to mitigate these challenges.},
+  presented  = {true}
 }
 
 @inproceedings{Smith2009a,
@@ -613,7 +641,19 @@
   author    = {Erik Ostrofsky and Gregory M. Kapfhammer},
   booktitle = {Poster Compendium of the 3rd International Symposium on Empirical Software Engineering and Measurement},
   title     = {An empirical comparison of methods for compressing test coverage reports},
-  year      = {2009}
+  year      = {2009},
+  abstract  = {Test coverage monitoring techniques are an integral part of modern methodologies for testing computer
+               software. For instance, tools such as automated fault localizers, test adequacy calculators, and
+               debuggers all use a coverage report for various purposes. Recently developed monitoring methods track the
+               coverage of the nodes and edges in a program's control flow graph, definition-use associations involving
+               program variables, or interaction with the state and structure of a database. However, a coverage report
+               often balloons in size as the monitor includes additional details about the behavior of the program, test
+               suite, and other software components such as the operating system and database. The marked increase in
+               coverage report size is particularly problematic when testing occurs in a resource constrained embedded
+               environment or on a build/test server that collects coverage results for many programs over a long time
+               period. Large coverage reports may also limit the efficiency and effectiveness of defect isolation
+               methods that monitor a remote program and thus transmit coverage data across a network.},
+  presented  = {true}
 }
 
 @inproceedings{Kapfhammer2008,
