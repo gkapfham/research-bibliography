@@ -388,6 +388,15 @@
   title     = {Reducing the cost of regression testing by identifying irreplaceable test cases},
   booktitle = {Proceedings of the 6th International Conference on Genetic and Evolutionary Computing},
   year      = {2012},
+  abstract  = {Test suite reduction techniques decrease the cost of software testing by removing the redundant test
+               cases from the test suite while still producing a reduced set of tests that yields the same level of code
+               coverage as the original suite. Most of the existing approaches to reduction aim to decrease the size of
+               the test suite. Yet, the difference in the execution cost of the tests is often significant and it may be
+               costly to use a test suite consisting of a few long-running test cases. Thus, this paper proposes an
+               algorithm, based on the concept of test irreplaceability, which creates a reduced test suite with a
+               decreased execution cost. Leveraging widely used benchmark programs, the empirical study shows that, in
+               comparison to existing techniques, the presented algorithm is the most effective at reducing the cost of
+               running a test suite.},
   presented = {true}
 }
 
@@ -428,7 +437,16 @@
   author    = {Just, Ren{\'e} and Kapfhammer, Gregory M. and Schweiggert, Franz},
   title     = {Using conditional mutation to increase the efficiency of mutation analysis},
   booktitle = {Proceedings of the 6th International Workshop on Automation of Software Test},
-  year      = {2011}
+  year      = {2011},
+  abstract  = {Assessing testing strategies and test sets is a crucial part of software testing. Mutation analysis is,
+               among other approaches, a suitable technique for this purpose. However, compared with other methods it is
+               rather time-consuming and applying mutation analysis to large software systems is still problematic. This
+               paper presents a versatile approach, called conditional mutation, which increases the efficiency of
+               mutation analysis. This new method significantly reduces the time overhead for generating and executing
+               the mutants. Results are reported for eight investigated programs up to 373,000 lines of code and 406,000
+               generated mutants. Furthermore, conditional mutation has been integrated into the Java 6 Standard Edition
+               compiler. Thus, it is widely applicable and not limited to a certain testing tool or framework.},
+  presented  = {true}
 }
 
 @inproceedings{Jones2011,
@@ -449,7 +467,19 @@
   author    = {Cobb, Jake and Jones, James A. and Kapfhammer, Gregory M. and Harrold, Mary Jean},
   title     = {Dynamic invariant detection for relational databases},
   booktitle = {Proceedings of the 9th International Workshop on Dynamic Analysis},
-  year      = {2011}
+  year      = {2011},
+  abstract  = {Despite the many automated techniques that benefit from dynamic invariant detection, to date, none are
+               able to capture and detect dynamic invariants at the interface of a program and its databases. This paper
+               presents a dynamic invariant detection method for relational databases and for programs that use
+               relational databases and an implementation of the approach that leverages the Daikon dynamic-invariant
+               engine. The method defines a mapping between relational database elements and Daikon's notion of program
+               points and variable observations, thus enabling row-level and column-level invariant detection. The paper
+               also presents the results of two empirical evaluations on four fixed data sets and three subject
+               programs. The first study shows that dynamically detecting and inferring invariants in a relational
+               database is feasible and 55% of the invariants produced for each subject are meaningful. The second study
+               reveals that all of these meaningful invariants are schema-enforceable using standards-compliant
+               databases and many can be checked by databases with only limited schema constructs.},
+  presented = {true}
 }
 
 @inproceedings{Just2011b,
