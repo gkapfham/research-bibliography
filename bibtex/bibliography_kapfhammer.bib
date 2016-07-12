@@ -861,21 +861,54 @@
   author    = {Jennifer Haddox and Gregory M. Kapfhammer and C.C. Michael},
   title     = {An approach for understanding and testing third-party software components},
   booktitle = {Proceedings of the 48th Reliability and Maintainability Symposium},
-  year      = {2002}
+  year      = {2002},
+  abstract  = {In this paper, we present an approach to mitigating software risk by understanding and testing third
+               party, or commercial-off-the-shelf (COTS), software components. Our approach, based on the notion of
+               software wrapping, gives system integrators an improved understanding of how a COTS component behaves
+               within a particular system. Our approach to wrapping allows the data flowing into and out of the
+               component at the public interface level to be intercepted. Using our wrapping approach, developers can
+               apply testing techniques such as fault injection, data collection and assertion checking to components
+               whose source code is unavailable. <p> We have created a methodology for using software wrapping in
+               conjunction with data collection, fault injection, and assertion checking to test the interaction between
+               a component and the rest of the application. The methodology seeks to identify locations in the program
+               where the system's interaction with COTS components could be problematic. Furthermore, we have developed
+               a prototype that implements our methodology for Java applications. The goal of this process is to allow
+               the developers to identify scenarios where the interaction between COTS software and the system could
+               result in system failure. We believe that the technology we have developed is an important step towards
+               easing the process of using COTS components in the building and maintenance of software systems.},
+  presented  = {true}
 }
 
 @inproceedings{Arnold2002a,
   author    = {Geoffrey C. Arnold and Gregory M. Kapfhammer and Robert S. Roos},
   title     = {Implementation and analysis of a JavaSpace supported by a relational database},
   booktitle = {Proceedings of the 8th International Conference on Parallel and Distributed Processing Techniques and Applications},
-  year      = {2002}
+  year      = {2002},
+  abstract  = {The combination of the Jini network technology and the JavaSpaces object repository provides an
+               exceptional environment for the design and implementation of loosely coupled distributed systems. We
+               explore the strengths and weaknesses of the most popular implementation of a persistent JavaSpace. We
+               report on the design, implementation, and analysis of RDBSpace, a JavaSpace that is supported by a
+               relational database. Our experimental results indicate that it is possible to build an efficient and
+               scalable JavaSpace that relies on a relational database back-end.},
+  presented = {true}
 }
 
 @inproceedings{Zorman2002a,
   author    = {Brian Zorman and Gregory M. Kapfhammer and Robert S. Roos},
   title     = {Creation and analysis of a JavaSpace-based genetic algorithm},
   booktitle = {Proceedings of the 8th International Conference on Parallel and Distributed Processing Techniques and Applications},
-  year      = {2002}
+  year      = {2002},
+  abstract  = {The island model for distributed genetic algorithms (GAs) is a natural match for the master-worker
+               paradigm in distributed computation. We explore the benefits and drawbacks of several distributed system
+               architectures in developing an implementation of a distributed GA that exploits the Jini and JavaSpace
+               technologies. Our results, using the knapsack problem as an illustration, show that there is an
+               unavoidable price to pay in terms of decreasing computation-to-communication ratios as a function of
+               instance size. However, we can diminish these effects by expanding the number of JavaSpaces beyond those
+               required for the obvious implementation. Our results also indicate that as the number of remote machines
+               increases the potential for a better solution also rises. Even though our distributed GAs did not always
+               exploit this potential for a higher quality solution, we believe that the combination of Java, Jini, and
+               JavaSpaces presents avenues for easily distributing the computation of genetic algorithms.},
+  presented  = {true}
 }
 
 @inproceedings{Bittman2001a,
