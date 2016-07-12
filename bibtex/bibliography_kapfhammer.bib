@@ -775,14 +775,46 @@
   author    = {Matthew J. Rummel and Gregory M. Kapfhammer and Andrew Thall},
   title     = {Towards the prioritization of regression test suites with data flow information},
   booktitle = {Proceedings of the 20th Symposium on Applied Computing},
-  year      = {2005}
+  year      = {2005},
+  abstract  = {Regression test prioritization techniques re-order the execution of a test suite in an attempt to ensure
+               that defects are revealed earlier in the test execution phase. In prior work, test suites were
+               prioritized with respect to their ability to satisfy control flow-based and mutation-based test adequacy
+               criteria. In this paper, we propose an approach to regression test prioritization that leverages the
+               all-DUs test adequacy criterion that focuses on the definition and use of variables within the program
+               under test. Our prioritization scheme is motivated by empirical studies that have shown that (i) tests
+               fulfilling the all-DUs test adequacy criteria are more likely to reveal defects than those that meet the
+               control flow-based criteria, (ii) there is an unclear relationship between all-DUs and mutation-based
+               criteria, and (iii) mutation-based testing is significantly more expensive than testing that relies upon
+               all-DUs. <p> In support of our prioritization technique, we provide a formal statement of the algorithms
+               and equations that we use to instrument the program under test, perform test suite coverage monitoring,
+               and calculate test adequacy. Furthermore, we examine the architecture of a tool that implements our novel
+               prioritization scheme and facilitates experimentation. The use of this tool in a preliminary experimental
+               evaluation indicates that, for three case study applications, our prioritization can be performed with
+               acceptable time and space overheads. Finally, these experiments also demonstrate that the prioritized
+               test suite can have an improved potential to identify defects earlier during the process of test
+               execution.},
+  presented  = {true}
 }
 
 @inproceedings{Kapfhammer2005,
   author    = {Gregory M. Kapfhammer and Mary Lou Soffa and Daniel Moss\'{e}},
   title     = {Testing in resource-constrained execution environments},
   booktitle = {Proceedings of the 20th International Conference on Automated Software Engineering},
-  year      = {2005}
+  year      = {2005},
+  abstract  = {Resource constrained embedded devices are becoming increasingly popular and affordable. Software for
+               these devices is often implemented in the Java programming language because the Java compiler and virtual
+               machine provide enhanced safety, portability, and the potential for run-time optimization. It is
+               important to verify that a software application executes correctly in the environment in which it will
+               normally execute, even if this environment is an embedded one that severely constrains memory resources.
+               Testing can be used to isolate defects within and establish a confidence in the correctness of a Java
+               application that executes in a resource constrained environment. However, executing test suites with a
+               Java virtual machine that uses dynamic compilation to create native code bodies can create significant
+               testing time overheads if memory resources are highly constrained. This paper describes an approach that
+               uses adaptive code unloading to ensure that it is feasible to perform testing in the actual memory
+               constrained execution environment. Our experiments demonstrate that code unloading can reduce both the
+               test suite execution time by 34% and the code size of the test suite and application under test by 78%
+               while maintaining the overall size of the Java virtual machine.},
+  presented  = {true}
 }
 
 @inproceedings{Howell2003a,
@@ -931,13 +963,24 @@
 }
 
 @article{Fiedler2005,
-  author  = {Daniel Fiedler and Kristen R. Walcott and Thomas Richardson and Gregory M. Kapfhammer and Ahmed Amer and Panos K. Chrysanthis},
-  journal = {Performance Evaluation Review},
-  title   = {Towards the measurement of tuple space performance},
-  year    = {2005},
-  month   = {December},
-  volume  = {33},
-  number  = {3}
+  author   = {Daniel Fiedler and Kristen R. Walcott and Thomas Richardson and Gregory M. Kapfhammer and Ahmed Amer and Panos K. Chrysanthis},
+  journal  = {Performance Evaluation Review},
+  title    = {Towards the measurement of tuple space performance},
+  year     = {2005},
+  month    = {December},
+  volume   = {33},
+  number   = {3},
+  abstract = {Many applications rely upon a tuple space within distributed system middleware to provide loosely coupled
+              communication and service coordination. This paper describes an approach for measuring the throughput and
+              response time of a tuple space when it handles concurrent local space interactions. Furthermore, it
+              discusses a technique that populates a tuple space with tuples before the execution of a benchmark in
+              order to age the tuple space and provide a worst-case measurement of space performance. We apply the tuple
+              space benchmarking and aging methods to the measurement of the performance of a JavaSpace, a current
+              example of a tuple space that integrates with the Jini network technology. The experiment results indicate
+              that: (i) the JavaSpace exhibits limited scalability as the number of concurrent interactions from local
+              space clients increases, (ii) the aging technique can operate with acceptable time overhead, and (iii) the
+              aging technique does ensure that the results from benchmarking capture the worst-case performance of a
+              tuple space.}
 }
 
 % VOLUMES EDITED
