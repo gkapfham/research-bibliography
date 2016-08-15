@@ -126,6 +126,26 @@
   presentation = {http://cdn.rawgit.com/gkapfham/sbst2016-presentation/master/sbst2016_position.html}
 }
 
+@inproceedings{McCurdy2016,
+  author    = {Colton J. McCurdy and Phil McMinn and Gregory M. Kapfhammer},
+  title     = {mrstudyr: Retrospectively studying the effectiveness of mutant reduction techniques},
+  booktitle = {Proceedings of the 32nd International Conference on Software Maintenance and Evolution},
+  year      = {2016},
+  abstract  = {Mutation testing is a well-known method for measuring a test suite's quality. However, due to its
+               computational expense and intrinsic difficulties (e.g., detecting equivalent mutants and potentially checking a
+               mutant's status for each test), mutation testing is often challenging to practically use. To control the
+               computational cost of mutation testing, many reduction strategies have been proposed (e.g., uniform random
+               sampling over mutants). Yet, a stand-alone tool to compare the efficiency and effectiveness of these methods
+               is heretofore unavailable. Since existing mutation testing tools are often complex and language-dependent, this
+               paper presents a tool, called <em>mrstudyr</em>, that enables the "retrospective" study of mutant reduction
+               methods using the data collected from a prior analysis of all mutants. Focusing on the mutation operators and the
+               mutants that they produce, the presented tool allows developers to prototype and evaluate mutant reducers without
+               being burdened by the implementation details of mutation testing tools. Along with describing <em>mrstudyr</em>'s
+               design and overviewing the experimental results from using it, this paper inaugurates the public release of this
+               open-source tool.},
+  tool      = {https://github.com/mccurdyc/mrstudyr},
+}
+
 @inproceedings{McMinn2016,
   author    = {Phil McMinn and Mark Harman and Gordon Fraser and Gregory M. Kapfhammer},
   title     = {Automated search for good coverage criteria: Moving from code coverage to fault coverage through search-based software engineering},
@@ -188,11 +208,11 @@
                incorrect, the services that depend on it may be compromised. The database schema is the artefact responsible for
                maintaining the integrity of stored data. Because of its critical function, the proper testing of the database
                schema is a task of great importance. Employing a search-based approach to generate high-quality test data for
-               database schemas, SchemaAnalyst is a tool that supports testing this key software component. This presented tool
-               is extensible and includes both an evaluation framework for assessing the quality of the generated tests and
-               full-featured documentation. In addition to describing the design and implementation of SchemaAnalyst and
-               overviewing its efficiency and effectiveness, this paper coincides with the tool's public release, thereby
-               enhancing practitioners' ability to test relational database schemas.},
+               database schemas, <em>SchemaAnalyst</em> is a tool that supports testing this key software component. This
+               presented tool is extensible and includes both an evaluation framework for assessing the quality of the generated
+               tests and full-featured documentation. In addition to describing the design and implementation of
+               <em>SchemaAnalyst</em> and overviewing its efficiency and effectiveness, this paper coincides with the tool's
+               public release, thereby enhancing practitioners' ability to test relational database schemas.},
   tool      = {https://github.com/schemaanalyst-team/schemaanalyst},
 }
 
