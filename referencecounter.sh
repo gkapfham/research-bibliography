@@ -16,6 +16,11 @@ echo ""
 ag --nocolor --nonumbers @incollection bibtex/bibliography_kapfhammer.bib
 
 echo ""
+printf "%s\n" "${red}I found these @techreport entries! ${end}"
+echo ""
+ag --nocolor --nonumbers @techreport bibtex/bibliography_kapfhammer.bib
+
+echo ""
 printf "%s\n" "${red}I found these @article entries! ${end}"
 echo ""
 ag --nocolor --nonumbers @article bibtex/bibliography_kapfhammer.bib
@@ -32,6 +37,9 @@ ag @inproceedings bibtex/bibliography_kapfhammer.bib | wc -l
 
 printf "%s   " "${red}Count of @incollection:${end}"
 ag @incollection bibtex/bibliography_kapfhammer.bib | wc -l
+
+printf "%s    " "${red}Count of @techreport:${end}"
+ag @techreport bibtex/bibliography_kapfhammer.bib | wc -l
 
 printf "%s        " "${red}Count of @article:${end}"
 ag @article bibtex/bibliography_kapfhammer.bib | wc -l
