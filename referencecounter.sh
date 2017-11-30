@@ -20,6 +20,11 @@ printf "%s\n" "${red}I found these @article entries! ${end}"
 echo ""
 ag --nocolor --nonumbers @article bibtex/bibliography_kapfhammer.bib
 
+echo ""
+printf "%s\n" "${red}I found these @misc entries! ${end}"
+echo ""
+ag --nocolor --nonumbers @misc bibtex/bibliography_kapfhammer.bib
+
 # display the summary counts for the different categories
 echo ""
 printf "%s " "${red}Count of @inproceedings:${end}"
@@ -30,4 +35,7 @@ ag @incollection bibtex/bibliography_kapfhammer.bib | wc -l
 
 printf "%s        " "${red}Count of @article:${end}"
 ag @article bibtex/bibliography_kapfhammer.bib | wc -l
+
+printf "%s          " "${red}Count of @misc:${end}"
+ag @misc bibtex/bibliography_kapfhammer.bib | wc -l
 echo ""
