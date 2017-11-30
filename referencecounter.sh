@@ -28,7 +28,7 @@ ag --nocolor --nonumbers @article bibtex/bibliography_kapfhammer.bib
 echo ""
 printf "%s\n" "${red}I found these @misc entries! ${end}"
 echo ""
-ag --nocolor --nonumbers @misc{Kapfhammer bibtex/bibliography_kapfhammer.bib
+ag --nocolor --nonumbers "@misc{Kapfhammer" bibtex/bibliography_kapfhammer.bib
 
 # display the summary counts for the different categories
 echo ""
@@ -45,5 +45,5 @@ printf "%s        " "${red}Count of @article:${end}"
 ag @article bibtex/bibliography_kapfhammer.bib | wc -l
 
 printf "%s          " "${red}Count of @misc:${end}"
-ag @misc{Kapfhammer bibtex/bibliography_kapfhammer.bib | wc -l
+ag "@misc{Kapfhammer" bibtex/bibliography_kapfhammer.bib | wc -l
 echo ""
