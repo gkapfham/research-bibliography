@@ -1106,6 +1106,30 @@
 
 % JOURNAL PAPERS -- BEGIN
 
+@article{McMinn2018,
+  author  = {McMinn, Phil and Wright, Chris and McCurdy, Colton and Kapfhammer, Gregory M.},
+  title   = {Automatic detection and removal of ineffective mutants for the mutation analysis of relational database schemas},
+  journal = {Transactions on Software Engineering},
+  year    = {2018},
+  abstract = {Data is one of an organization's most valuable and strategic assets. Testing the relational database
+              schema, which protects the integrity of this data, is of paramount importance. Mutation analysis is a
+              means of estimating the fault-finding ``strength'' of a test suite. As with program mutation, however,
+              relational database schema mutation results in many ineffective mutants that both degrade test suite
+              quality estimates and make mutation analysis more time consuming. This paper presents a taxonomy of
+              ineffective mutants for relational database schemas, summarizing the root causes of ineffectiveness
+              with a series of key patterns evident in database schemas. On the basis of these, we introduce
+              algorithms that automatically detect and remove ineffective mutants. In an experimental study
+              involving the mutation analysis of 34 schemas used with three popular relational database management
+              systems---HyperSQL, PostgreSQL, and SQLite---the results show that our algorithms can identify and
+              discard large numbers of ineffective mutants that can account for up to 24% of mutants, leading to a
+              change in mutation score for 33 out of 34 schemas. The tests for seven schemas were found to achieve
+              100% scores, indicating that they were capable of detecting and killing all non-equivalent mutants.
+              The results also reveal that the execution cost of mutation analysis may be significantly reduced,
+              especially with "heavyweight" DBMSs like PostgreSQL.},
+  tool     = {https://github.com/schemaanalyst/schemaanalyst}
+  data     = {https://github.com/schemaanalyst/domino-replicate},
+}
+
 @article{Lin2017,
   author  = {Lin, Chu-Ti and Tang, Kai-Wei and Wang, Jiun-Shiang and Kapfhammer, Gregory M.},
   title   = {Empirically evaluating greedy-based test suite reduction methods at different levels of test suite complexity},
