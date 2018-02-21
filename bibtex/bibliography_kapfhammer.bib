@@ -108,6 +108,27 @@
 
 % CONFERENCE PAPERS -- BEGIN
 
+@inproceedings{McMinn2018a,
+  author    = {Abdullah Alsharif and Gregory M. Kapfhammer and Phil McMinn},
+  title     = {{DOMINO}: Fast and effective test data generation for relational database schemas},
+  booktitle = {Proceedings of the 11th International Conference on Software Testing, Verification and Validation},
+  year      = {2018},
+  abstract  = {An organization's databases are often one of its most valuable assets. Data engineers commonly use a
+               relational database because its schema ensures the validity and consistency of the stored data through
+               the specification and enforcement of integrity constraints. To ensure their correct specification,
+               industry advice recommends the testing of the integrity constraints in a relational schema. Since
+               manual schema testing is labor-intensive and error-prone, this paper presents DOMINO, a new
+               automated technique that generates test data according to a coverage criterion for integrity
+               constraint testing. In contrast to more generalized search-based approaches, which represent the
+               current state of the art for this task, DOMINO uses tailored, domain-specific operators to
+               efficiently generate test data for relational database schemas. In an empirical study incorporating
+               34 relational database schemas hosted by three different database management systems, the results
+               show that DOMINO can not only generate test suites faster than the state-of-the-art search-based
+               method but that its test suites can also detect more schema faults.},
+  data      = {https://github.com/schemaanalyst/domino-replicate},
+  tool      = {https://github.com/schemaanalyst/schemaanalyst}
+}
+
 @inproceedings{Walsh2017,
   author    = {Thomas A. Walsh and Gregory M. Kapfhammer and Phil McMinn},
   title     = {Automated layout failure detection for responsive web pages without an explicit oracle},
