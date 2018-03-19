@@ -129,6 +129,32 @@
   tool      = {https://github.com/schemaanalyst/schemaanalyst}
 }
 
+@inproceedings{Paterson2018,
+  author    = {David Paterson and Gregory M. Kapfhammer and Gordon Fraser and Phil McMinn},
+  title     = {Using controlled numbers of real faults and mutants to empirically evaluate coverage-based test case prioritization},
+  booktitle = {Proceedings of the 13th International Workshop on Automation of Software Test},
+  year      = {2018},
+  abstract  = {Used to establish confidence in the correctness of evolving
+               software, regression testing is an important, yet costly, task.
+               Test case prioritization enables the rapid detection of faults
+               during regression testing by reordering the test suite so that
+               effective tests are run as early as is possible. However, a
+               distinct lack of information about the regression faults found
+               in complex real-world software forced prior experimental studies
+               of these methods to use artificial faults called mutants. Using
+               the Defects4J database of real faults, this paper presents the
+               results of experiments evaluating the effectiveness of four
+               representative test prioritization techniques. Since this
+               paper’s results show that prioritization is susceptible to high
+               amounts of variance when only one fault is present, our
+               experiments also control the number of real faults and mutants
+               in the program subject to regression testing. Our overall
+               findings are that, in comparison to mutants, real faults are
+               harder for reordered test suites to quickly detect, suggesting
+               that mutants are not a surrogate for real faults.},
+  tool      = {https://github.com/kanonizo/kanonizo}
+}
+
 @inproceedings{Walsh2017,
   author    = {Thomas A. Walsh and Gregory M. Kapfhammer and Phil McMinn},
   title     = {Automated layout failure detection for responsive web pages without an explicit oracle},
