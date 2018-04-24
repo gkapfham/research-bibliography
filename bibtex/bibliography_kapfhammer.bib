@@ -142,7 +142,10 @@
                duplication within a database. Also, different database management
                systems (DBMSs) often interpret integrity constraints differently (e.g.,
                a PRIMARY KEY can accept a NULL value once with SQLite but not with
-               other DBMSs).},
+               other DBMSs). In this paper and the accompanying demonstration we introduce
+               the use and benefits of DOMINO (DOMain-specific approach to INtegrity cOnstraint
+               test data generation), a new technique that automatically generates a test
+               suite for a database schema.},
   tool      = {https://github.com/schemaanalyst/schemaanalyst}
 }
 
@@ -159,7 +162,12 @@
                SchemaAnalyst generates tests that support three
                database management systems (DBMSs): PostgreSQL, SQLite, and HyperSQL.
                It also provides a mutation testing tool to mutate (i.e., remove, add,
-               or flip) the integrity constraints in the schema under test.},
+               or flip) the integrity constraints in the schema under test. This paper explains how to run
+               test generation experiments
+               and data analysis with SchemaAnalyst and its data analysis
+               package written in the R language for statistical computation.
+               It will help others to use SchemaAnalyst, replicate prior experiments, and
+               conduct new studies of schema testing.},
   data      = {https://github.com/schemaanalyst/domino-replicate},
   tool      = {https://github.com/schemaanalyst/schemaanalyst}
 }
