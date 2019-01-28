@@ -108,6 +108,29 @@
 
 % CONFERENCE PAPERS {{{
 
+@inproceedings{Althomali2019,
+  author       = {Ibrahim Althomali and Gregory M. Kapfhammer and Phil McMinn},
+  title        = {Automatic visual verification of layout failures in responsively designed web pages},
+  booktitle    = {Proceedings of the 12th International Conference on Software Testing, Verification and Validation},
+  year         = {2019},
+  abstract     = {Responsively designed web pages adjust their layout according to the viewport width of the device in
+                  use. Although tools exist to help developers test the layout of a responsive web page, they often rely
+                  on humans to flag problems. Yet, the considerable number of web-enabled devices with unique viewport
+                  widths makes this manual process both time-consuming and error-prone. Capable of detecting some common
+                  responsive layout failures, the ReDeCheck tool partially automates this process. Since ReDeCheck
+                  focuses on a web page’s document object model (DOM), some of the issues it finds are not observable by
+                  humans. This paper presents a tool, called Viser, that renders a ReDeCheck-reported layout issue in a
+                  browser, adjusting the opacity of certain elements and checking for a visible difference. Unless Viser
+                  classifies an issue as a human-observable layout failure, a web developer can ignore it. This paper’s
+                  experiments reveal the benefit of using Viser to support automated visual verification of layout
+                  failures in responsively designed web pages. Viser automatically classified all of the 117 layout
+                  failures that ReDeCheck reported for 20 web pages, each of which had to be manually analyzed in a
+                  prior study. Viser’s automated manipulation of element opacity also highlighted manual
+                  classification’s subjectivity: it categorized 28 issues differently to manual analysis, including
+                  three correctly reclassified as false positives.},
+  tool         = {https://github.com/redecheck/viser}
+}
+
 @inproceedings{Alsharif2018,
   author       = {Abdullah Alsharif and Gregory M. Kapfhammer and Phil McMinn},
   title        = {DOMINO: Fast and effective test data generation for relational database schemas},
