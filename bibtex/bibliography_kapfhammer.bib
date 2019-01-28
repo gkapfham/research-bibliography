@@ -131,6 +131,29 @@
   tool         = {https://github.com/redecheck/viser}
 }
 
+@inproceedings{Paterson2019,
+  author       = {David Paterson and Jos\'{e} Campos and Rui Abreu and Gregory M. Kapfhammer and Gordon Fraser and Phil McMinn},
+  title        = {An empirical study on the use of defect prediction for test case prioritization},
+  booktitle    = {Proceedings of the 12th International Conference on Software Testing, Verification and Validation},
+  year         = {2019},
+  abstract     = {Test case prioritization has been extensively researched as a means for reducing the time taken to
+                  discover regressions in software. While many different strategies have been developed and evaluated,
+                  prior experiments have shown them to not be effective at prioritizing test suites to find real faults.
+                  This paper presents a test case prioritization strategy based on defect prediction, a technique that
+                  analyzes code features --- such as the number of revisions and authors --- to estimate the likelihood
+                  that any given Java class will contain a bug. Intuitively, if defect prediction can accurately predict
+                  the class that is most likely to be buggy, a tool can prioritize tests to rapidly detect the defects
+                  in that class. We investigated how to configure a defect prediction tool, called Schwa, to maximize
+                  the likelihood of an accurate prediction, surfacing the link between perfect defect prediction and
+                  test case prioritization effectiveness. Using 6 real-world Java programs containing 395 real faults,
+                  we conducted an empirical evaluation comparing this paper’s strategy, called G-clef, against eight
+                  existing test case prioritization strategies. The experiments reveal that using defect prediction to
+                  prioritize test cases reduces the number of test cases required to find a fault by on average 9.48%
+                  when compared with existing coverage-based strategies, and 10.5% when compared with existing
+                  history-based strategies.},
+  tool         = {https://github.com/kanonizo/kanonizo}
+}
+
 @inproceedings{Alsharif2018,
   author       = {Abdullah Alsharif and Gregory M. Kapfhammer and Phil McMinn},
   title        = {DOMINO: Fast and effective test data generation for relational database schemas},
