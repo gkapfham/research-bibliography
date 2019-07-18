@@ -108,6 +108,30 @@
 
 % CONFERENCE PAPERS {{{
 
+@inproceedings{Alsharif2019,
+  author       = {Abdullah Alsharif and Gregory M. Kapfhammer and Phil McMinn},
+  title        = {What factors make SQL test cases understandable for testers? A human study of automated test data generation techniques},
+  booktitle    = {Proceedings of the 35nd International Conference on Software Maintenance and Evolution},
+  year         = {2019},
+  abstract     = {Since relational databases are a key component of software systems ranging from small mobile to large
+                  enterprise applications, there are well-studied methods that automatically generate test cases for
+                  database-related functionality. Yet, there has been no research to analyze how well testers --- who
+                  must often serve as an "oracle" --- both understand tests involving SQL and decide if they reveal
+                  flaws. This paper reports on a human study of test comprehension in the context of automatically
+                  generated tests that assess the correct specification of the integrity constraints in a relational
+                  database schema. In this domain, a tool generates INSERT statements with data values designed to
+                  either satisfy (i.e., be accepted into the database) or violate the schema (i.e., be rejected from the
+                  database). The study reveals two key findings. First, the choice of data values in INSERTs influences
+                  human understandability: the use of default values for elements not involved in the test (but
+                  necessary for adhering to SQL's syntax rules) aided participants, allowing them to easily identify and
+                  understand the important test values. Yet, negative numbers and "garbage" strings hindered this
+                  process. The second finding is more far reaching: humans found the outcome of test cases very
+                  difficult to predict when NULL was used in conjunction with foreign keys and CHECK constraints. This
+                  suggests that, while including NULL s can surface the confusing semantics of database schemas, their
+                  use makes tests less understandable for humans.},
+  tool         = {https://github.com/schemaanalyst/schemaanalyst},
+}
+
 @inproceedings{Althomali2019,
   author       = {Ibrahim Althomali and Gregory M. Kapfhammer and Phil McMinn},
   title        = {Automatic visual verification of layout failures in responsively designed web pages},
