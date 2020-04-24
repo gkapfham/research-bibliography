@@ -131,6 +131,29 @@
   tool         = {https://github.com/schemaanalyst/schemaanalyst}
 }
 
+@inproceedings{Alsharif2020a,
+  author       = {Abdullah Alsharif and Gregory M. Kapfhammer and Phil McMinn},
+  title        = {Hybrid methods for reducing database schema test suites: Experimental insights from computational and human studies},
+  booktitle    = {Proceedings of the 1st International Conference on Automation of Software Test},
+  year         = {2020},
+  abstract     = {Given that a relational database is a critical component of many software applications, it is
+                  important to thoroughly test the integrity constraints of a database's schema, because they protect
+                  the data. Although automated test data generation techniques ameliorate the otherwise manual task of
+                  database schema testing, they often create test suites that contain many, sometimes redundant, tests.
+                  Since prior work presented a hybridized test suite reduction technique, called STICCER, that
+                  beneficially combined Greedy test suite reduction with a test merging method customized for database
+                  schemas, this paper experimentally evaluates a different hybridization. Motivated by prior results
+                  showing that test suite reduction with the Harrold-Gupta-Soffa (HGS) method can be more effective than
+                  Greedy at reducing database schema test suites, this paper evaluates an HGS-driven STICCER variant
+                  with both a computational and a human study. Using 34 database schemas and tests created by two test
+                  data generators, the results from the computational study reveal that, while STICCER is equally
+                  efficient and effective when combined with either Greedy or HGS, it is always better than the isolated
+                  use of either Greedy or HGS. Involving 27 participants, the human study shows that, when compared to
+                  test suites reduced by HGS, those reduced by a STICCER-HGS hybrid allow humans to inspect test cases
+                  faster, but not always more accurately.},
+  tool         = {https://github.com/schemaanalyst/schemaanalyst}
+}
+
 @inproceedings{Parry2020,
   author       = {Owain Parry and Gregory M. Kapfhammer and Michael Hilton and Phil McMinn},
   title        = {Flake it `till you make it: Using automated repair to induce and fix latent test flakiness},
