@@ -1381,6 +1381,34 @@
 
 % JOURNAL PAPERS {{{
 
+@article{Walsh2020,
+  author  = {Thomas A. Walsh and Gregory M. Kapfhammer and Phil McMinn},
+  title   = {Automatically identifying potential regressions in the layout of responsive web pages},
+  journal = {Software Testing, Verification and Reliability},
+  year    = {2020},
+  abstract = {Providing a good user experience on the ever-increasing number and variety of devices being used to browse
+              the web is a difficult, yet critical, task. With Responsive Web Design (RWD), front-end web developers
+              design web pages so that they dynamically resize and rearrange content to best fit the dimensions of a
+              device’s screen. However, when making code modifications to a responsive page, developers can easily
+              introduce regressions from the correct layout that have detrimental effects at unpredictable screen sizes.
+              For instance, the source code change that a developer makes to improve the layout at one screen size may
+              obscure a page’s content at other sizes. Current approaches to testing are often insufficient because they rely
+              on limited tools and error-prone manual inspections of a web page. As such, many unintended regressions
+              in web page layout often go undetected and ultimately manifest in production web sites. To address the
+              challenge of detecting regressions in responsive web pages, this paper presents an automated approach
+              that extracts the responsive layout of two versions of a page and compares them, alerting developers to
+              the differences in layout that they may wish to investigate further. We implemented the approach and
+              empirically evaluated it on 15 real-world responsive web pages. Leveraging code mutations that a tool
+              automatically injected into the pages as a systematic simulation of developer changes, the experiments
+              show that the approach was highly effective. When compared with manual and automated baseline testing
+              techniques, it detected 12.5% and 18.75% more injected changes, respectively. Along with identifying the
+              best parameters for the method that extracts the responsive layout, the experiments show that the approach
+              surpasses the baselines across changes that vary in their impact, but works particularly well for subtle,
+              hard-to-detect mutants, showing the benefits of automatically identifying regressions in web page layout.},
+  data     = {https://github.com/redecheck/jstvr-webpages},
+  tool     = {https://github.com/redecheck/redecheck-tool}
+}
+
 @article{McMinn2019,
   author  = {McMinn, Phil and Wright, Chris and McCurdy, Colton and Kapfhammer, Gregory M.},
   title   = {Automatic detection and removal of ineffective mutants for the mutation analysis of relational database schemas},
