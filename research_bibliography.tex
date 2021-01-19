@@ -60,7 +60,7 @@
 \DeclareFieldFormat[misc]{title}{\mkbibquote{#1\addcomma}}
 \printbibliography[filter=volumesedited,title={Volumes Edited}]
 
-% SUPERVISED THESES
+% DISSERTATION AND THESIS
 \defbibfilter{theses}{
   type=report or
   type=thesis or
@@ -71,6 +71,6 @@
 \DeclareFieldFormat[thesis]{title}{\mkbibquote{#1\addcomma}}
 \DeclareFieldFormat[thesis]{type}{#1\addcomma}
 \DeclareFieldFormat[report]{number}{#1\addcomma}
-\printbibliography[filter=theses,title={Supervised Theses}]
+\printbibliography[filter=theses,title={Dissertation and Thesis}]
 
 \end{document}
