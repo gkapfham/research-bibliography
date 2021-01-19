@@ -73,12 +73,4 @@
 \DeclareFieldFormat[report]{number}{#1\addcomma}
 \printbibliography[filter=theses,title={Supervised Theses}]
 
-% SUPERVISED RESEARCH PRESENTATIONS:
-\defbibfilter{supervise}{
-  type=misc and
-  keyword=supervised
-}
-\DeclareFieldFormat[misc]{title}{\mkbibquote{#1\addcomma}}
-\printbibliography[filter=supervise,title={Supervised Presentations}]
-
 \end{document}
