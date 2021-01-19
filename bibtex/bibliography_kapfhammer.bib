@@ -1383,6 +1383,38 @@
 
 % JOURNAL PAPERS {{{
 
+@article{Althomali2021,
+  author  = {Ibrahim Althomali and Gregory M. Kapfhammer and Phil McMinn},
+  title   = {Automated visual classification of DOM-based presentation failure reports for responsive web pages},
+  journal = {Software Testing, Verification and Reliability},
+  year    = {2021},
+  abstract = {Since it is common for the users of a web page to access it through a wide variety of devices ---
+              including desktops, laptops, tablets, and phones --- web developers rely on responsive web design (RWD)
+              principles and frameworks to create sites that are useful on all devices. A correctly implemented
+              responsive web page adjusts its layout according to the viewport width of the device in use, thereby
+              ensuring its design suitably features the content. Since the use of complex RWD frameworks often leads to
+              web pages with hard-to-detect responsive layout failures (RLFs), developers employ testing tools that
+              generate reports of potential RLFs. Since testing tools for responsive web pages, like ReDeCheck, analyze
+              a web page representation called the document object model (DOM), they may inadvertently flag concerns
+              that are not human visible, thereby requiring developers to manually confirm and classify each potential
+              RLF as a true positive (TP), false positive (FP), or non-observable issue (NOI) --- a process that is time
+              consuming and error prone. The conference version of this paper presented VISER, a tool that automatically
+              classified three types of RLFs reported by ReDeCheck. Since VISER was not designed to automatically
+              confirm and classify two types of RLFs that ReDeCheck's DOM-based analysis could surface, this paper
+              introduces VERVE, a tool that automatically classifies all RLF types reported by ReDeCheck. Along with
+              manipulating the opacity of HTML elements in a web page, as does VISER, the VERVE tool also uses
+              histogram-based image comparison to classify RLFs in web pages. Incorporating both the 25 web pages used
+              in prior experiments and 20 new pages not previously considered, this paper’s empirical study reveals that
+              VERVE's classification of all five types of RLFs frequently agrees with classifications produced manually
+              by humans. The experiments also reveal that VERVE took on average about 4 seconds to classify any of the
+              RLFs among the 469 reported by ReDeCheck. Since this paper demonstrates that classifying an RLF as a TP,
+              FP, or NOI with VERVE, a publicly available tool, is less subjective and error-prone than the same manual
+              process done by a human web developer, we argue that it is well-suited for supporting the testing of
+              complex responsive web pages.},
+  data     = {https://verve-tool.github.io/},
+  tool     = {https://github.com/verve-tool/verve}
+}
+
 @article{Walsh2020,
   author  = {Thomas A. Walsh and Gregory M. Kapfhammer and Phil McMinn},
   title   = {Automatically identifying potential regressions in the layout of responsive web pages},
