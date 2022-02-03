@@ -129,7 +129,31 @@
                   evaluated LayoutDR on 19 subjects, containing 55 RLFs in total. LayoutDR could find a suitable
                   fix for each of them. When we conducted a human study of the repairs, 92% of the participants
                   preferred the repaired version of the page compared to the original containing the RLF.},
-  presented    = {false}
+}
+
+@inproceedings{Parry2022,
+  author       = {Owain Parry and Gregory M. Kapfhammer and Michael Hilton and Phil McMinn},
+  title        = {Evaluating Features for Machine Learning Detection of Order- and Non-Order-Dependent Flaky Tests},
+  booktitle    = {Proceedings of the 15th International Conference on Software Testing, Verification and Validation},
+  year         = {2022},
+  abstract     = {Flaky tests are test cases that can pass or fail without code changes. They often waste the time of
+                  software developers and obstruct the use of continuous integration. Previous work has presented
+                  several automated techniques for detecting flaky tests, though many involve repeated test executions
+                  and a lot of source code instrumentation and thus may be both intrusive and expensive. While this
+                  motivates researchers to evaluate machine learning models for detecting flaky tests, prior work on the
+                  features used to encode a test case is limited. Without further study of this topic, machine learning
+                  models cannot perform to their full potential in this domain. Previous studies also exclude a
+                  specific, yet prevalent and problematic, category of flaky tests: order-dependent (OD) flaky tests.
+                  This means that prior research only addresses part of the challenge of detecting flaky tests with
+                  machine learning. Closing this knowledge gap, this paper presents a new feature set for encoding
+                  tests, called Flake16. Using 54 distinct pipelines of data preprocessing, data balancing, and
+                  machine learning models for detecting both non-order-dependent (NOD) and OD flaky tests, this paper
+                  compares Flake16 another well-established feature set. To assess the new feature set’s
+                  effectiveness, this paper’s experiments use the test suites of 26 Python projects, consisting of over
+                  67,000 tests. Along with identifying the most impactful metrics for using machine learning to detect
+                  both types of flaky test, the empirical study shows how Flake16 is better than prior work, including
+                  (1) a 13% increase in overall F1 score when detecting NOD flaky tests and (2) a 17% increase in
+                  overall F1 score when detecting OD flaky tests.},
 }
 
 @inproceedings{Alsharif2020,
