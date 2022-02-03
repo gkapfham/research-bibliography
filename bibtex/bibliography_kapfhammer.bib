@@ -110,6 +110,28 @@
 
 % CONFERENCE PAPERS {{{
 
+@inproceedings{Althomali2022,
+  author       = {Ibrahim Althomali and Gregory M. Kapfhammer and Phil McMinn},
+  title        = {Automated Repair of Responsive Web Page Layouts},
+  booktitle    = {Proceedings of the 15th International Conference on Software Testing, Verification and Validation},
+  year         = {2022},
+  abstract     = {Responsive Web Design (RWD) is a strategy that allows developers to create webpages that adjust their
+                  layout according to available screen size. Since modern web applications must format correctly on the
+                  small displays of mobile devices up to the large displays on desktop computers, and given this
+                  dramatic difference in screen space, Responsive Layout Failures (RLFs) — visual discrepancies that are
+                  only apparent at certain screen sizes — can easily creep into live production webpages. These can
+                  include, for example, HTML elements protruding off the edge of the page or into one another as layout
+                  space becomes scarce. This leaves webpages looking unprofessional at best and non-functional at worst.
+                  This paper presents a technique for repairing RLFs, implemented into a tool called LayoutDR. After
+                  detecting an RLF, LayoutDR harvests layouts from the page’s responsive design that are closest to
+                  the point of failure, but where the RLF does not occur. It then transforms these layouts so that they
+                  can be transplanted over the failure, effectively “hiding” the original RLF from the end user. We
+                  evaluated LayoutDR on 19 subjects, containing 55 RLFs in total. LayoutDR could find a suitable
+                  fix for each of them. When we conducted a human study of the repairs, 92% of the participants
+                  preferred the repaired version of the page compared to the original containing the RLF.},
+  presented    = {false}
+}
+
 @inproceedings{Alsharif2020,
   author       = {Abdullah Alsharif and Gregory M. Kapfhammer and Phil McMinn},
   title        = {STICCER: Fast and effective database test suite reduction through merging of similar test cases},
