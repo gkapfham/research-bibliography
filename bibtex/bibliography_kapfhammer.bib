@@ -174,6 +174,26 @@
                   common causes of flaky tests.},
 }
 
+@inproceedings{Parry2022c,
+  author       = {Owain Parry and Gregory M. Kapfhammer and Michael Hilton and Phil McMinn},
+  title        = {What do developer-repaired flaky tests tell us about the effectiveness of automated flaky test detection?},
+  booktitle    = {Proceedings of the 3rd International Conference on Automation of Software Test},
+  year         = {2022},
+  abstract     = {Because they pass or fail without code changes, flaky tests cause serious problems such as spuriously
+                  failing builds and the eroding of developers’ trust in tests. Many previous evaluations of automated flaky test
+                  detection techniques do not accurately assess their usefulness for the developers who identify the flaky tests to
+                  repair. This is because researchers evaluate detection techniques against baselines that are not derived from past
+                  developer behavior or against no baselines at all. To study the effectiveness of an automated test rerunning
+                  technique, a common baseline for other approaches to detection, this paper uses 75 commits --- authored by human
+                  software developers --- that repair test flakiness in 31 real-world Python projects. Surprisingly, automated
+                  rerunning detects the developer-repaired flaky tests in only 40% of the studied commits. This result suggests
+                  that automated rerunning does not often find those flaky tests that developers fix, implying that it makes an
+                  unsuitable baseline for assessing a detection technique’s usefulness for developers.},
+  tool         = {https://github.com/flake-it/showflakes},
+  presentation = {https://speakerdeck.com/gkapfham/what-do-developer-repaired-flaky-tests-tell-us-about-the-effectiveness-of-automated-flaky-test-detection},
+  presented    = {true}
+}
+
 @inproceedings{Alsharif2020,
   author       = {Abdullah Alsharif and Gregory M. Kapfhammer and Phil McMinn},
   title        = {STICCER: Fast and effective database test suite reduction through merging of similar test cases},
