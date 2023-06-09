@@ -1487,27 +1487,28 @@
   volume  = {28},
   number  = {72},
   year    = {2023},
-  abstract = {A flaky test is a test case whose outcome changes without
-              modification to the code of the test case or the program under test. These
-              tests disrupt continuous integration, cause a loss of developer productivity,
-              and limit the efficiency of testing. Many flaky test detection techniques are
-              rerunning-based, meaning they require repeated test case executions at a
-              considerable time cost, or are machine learning-based, and thus they are fast
-              but offer only an approximate solution with variable detection performance.
-              These two extremes leave developers with a stark choice. This paper
-              introduces CANNIER, an approach for reducing the time cost of rerunning-based
-              detection techniques by combining them with machine learning models. The
-              empirical evaluation involving 89,668 test cases from 30 Python projects
-              demonstrates that CANNIER can reduce the time cost of existing
-              rerunning-based techniques by an order of magnitude while maintaining a
-              detection performance that is significantly better than machine learning
-              models alone. Furthermore, the comprehensive study extends existing work on
-              machine learning-based detection and reveals a number of additional findings,
-              including (1) the performance of machine learning models for detecting
-              polluter test cases; (2) using the mean values of dynamic test case features
-              from repeated measurements can slightly improve the detection performance of
-              machine learning models; and (3) correlations between various test case
-              features and the probability of the test case being flaky.},
+  abstract = {<span class="gist">A flaky test is a test case whose outcome
+  changes without modification to the code of the test case or the program
+  under test.</span> These tests disrupt continuous integration, cause a loss
+  of developer productivity, and limit the efficiency of testing. Many flaky
+  test detection techniques are rerunning-based, meaning they require repeated
+  test case executions at a considerable time cost, or are machine
+  learning-based, and thus they are fast but offer only an approximate solution
+  with variable detection performance. These two extremes leave developers with
+  a stark choice. <span class="gist">This paper introduces CANNIER</span>, an
+  approach for reducing the time cost of rerunning-based detection techniques
+  by combining them with machine learning models.<span class="gist">The
+  empirical evaluation involving 89,668 test cases from 30 Python projects
+  demonstrates that CANNIER can reduce the time cost of existing
+  rerunning-based techniques by an order of magnitude while maintaining a
+  detection performance that is significantly better than machine learning
+  models alone.</span> Furthermore, the comprehensive study extends existing
+  work on machine learning-based detection and reveals a number of additional
+  findings, including (1) the performance of machine learning models for
+  detecting polluter test cases; (2) using the mean values of dynamic test case
+  features from repeated measurements can slightly improve the detection
+  performance of machine learning models; and (3) correlations between various
+  test case features and the probability of the test case being flaky.},
   tool     = {https://github.com/flake-it/pytest-cannier}
 }
 
