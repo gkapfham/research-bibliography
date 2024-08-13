@@ -149,13 +149,31 @@
 
 @inproceedings{Maton2024,
   author = {Megan Maton and Gregory M. Kapfhammer and Phil McMinn},
-  title = {Exploring pseudo-testedness: {Empirically} evaluating extreme mutation testing at the statement level},
-  booktitle = {Proceedings of the 35th International Conference on Software
-               Maintenance and Evolution},
+  title = {Exploring pseudo-testedness: Empirically evaluating extreme mutation testing at the statement level},
+  booktitle = {Proceedings of the 35th International Conference on Software Maintenance and Evolution},
   year = {2024},
-  abstract = {},
-  tool = {},
-  presentation = {},
+  abstract = {Extreme mutation testing (XMT) detects undesirable
+  pseudo-testedness in a program by deleting the method bodies of covered code
+  and observing whether the test suite can detect their absence. Even though
+  XMT may identify test limitations, its coarse granularity means that it may
+  overlook testing inadequacies, particularly at the statement level, that
+  developers may want to address before committing the resources demanded by
+  traditional mutation testing. This paper proposes the use of the statement
+  deletion mutation operator (SDL) to uncover pseudo-tested statements in
+  addition to complete methods. In an experimental evaluation involving four
+  frequently- studied, large, Apache Commons Java projects and 23 projects
+  randomly selected from the Maven Central Repository, we found 722 different
+  cases of pseudo-tested statements. Critically, we discovered that 48% of
+  these statements exist outside of pseudo-tested methods, meaning that the
+  detection of testing deficiencies related to these statements would normally
+  be left to traditional, resource-intensive, mutation testing. Also, we found
+  that a popular Java mutation testing tool would not have mutated some of the
+  statement types involved in the first place, effectively rendering these
+  issues, hitherto, hard to discover. This paper therefore demonstrates that
+  XMT alone is insufficient and should be combined with pseudo-tested statement
+  evaluation to pinpoint subtle, yet important, testing oversights that a
+  developer should tackle before applying traditional mutation testing.},
+  tool = {https://github.com/PseudoTested/PseudoSweep},
   presented = {false},
 }
 
