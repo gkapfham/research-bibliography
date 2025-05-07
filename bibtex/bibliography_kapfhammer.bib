@@ -163,6 +163,41 @@
             information, see https://philmcminn.com/test-suite-health.},
 }
 
+@inproceedings{Parry2025,
+  author = {Owain Parry and Gregory M. Kapfhammer and Michael Hilton and Phil
+            McMinn},
+  title = {Systemic flakiness: An empirical analysis of co-occurring flaky test failures},
+  booktitle = {Proceedings of the 29th International Conference on Evaluation and Assessment in Software Engineering},
+  year = {2025},
+  abstract = {Flaky tests produce inconsistent outcomes without code changes,
+    creating major challenges for software developers. An industrial
+    case study reported that developers spend 1.28% of their time re-
+    pairing flaky tests at a monthly cost of $2,250. This paper reveals
+    that flaky tests often exist in clusters, with co-occurring failures
+    that share the same root causes, which we call systemic flakiness.
+    This result suggests that developers can reduce test repair costs by
+    addressing shared root causes, enabling them to fix multiple flaky
+    tests at once rather than tackling them individually. This study
+    represents an inflection point by challenging the deep-seated as-
+    sumption that flaky test failures are isolated occurrences. We used
+    an established dataset of 10,000 test suite runs from 24 Java projects
+    on GitHub, spanning domains from data orchestration to job sched-
+    uling. Using a data set that contains 810 flaky tests, we performed a
+    mixed-method empirical analysis of co-occurring flaky test failures,
+    revealing that systemic flakiness is significant and widespread.
+    <p> We ran agglomerative clustering of flaky tests based on their
+    failure co-occurrence, showing that 75% of flaky tests across all
+    projects belong to a cluster, with a mean cluster size of 13.5 flaky
+    tests. Instead of requiring 10,000 test suite runs to identify systemic
+    flakiness, this paper demonstrates a lightweight alternative by train-
+    ing machine learning models based on static test case distance
+    measures. Through manual inspection of stack traces, conducted
+    independently by the paper’s four authors and resolved through
+    negotiated agreement, we identified intermittent networking is-
+    sues and instabilities in external dependencies as the predominant
+    causes of systemic flakiness in the chosen open-source projects.},
+}
+
 @inproceedings{Maton2024,
   author = {Megan Maton and Gregory M. Kapfhammer and Phil McMinn},
   title = {Exploring pseudo-testedness: Empirically evaluating extreme mutation testing at the statement level},
@@ -220,7 +255,6 @@
                  https://speakerdeck.com/gkapfham/pseudosweep-a-pseudo-tested-code-identifier 
                  },
   presented = {true},
-
 }
 
 @inproceedings{Althomali2022,
