@@ -203,8 +203,8 @@
 @inproceedings{Maton2025,
   author = {Megan Maton and Gregory M. Kapfhammer and Phil McMinn},
   title = {Where tests fall short: Empirically analyzing oracle gaps in covered code},
-  booktitle = {Proceedings of the 35th International Conference on Software Maintenance and Evolution},
-  year = {2024},
+  booktitle = {Proceedings of the 19th International Symposium on Empirical Software Engineering and Measurement},
+  year = {2025},
   abstract = {<em>Background</em>: Developers often rely on statement coverage
   to assess test suite quality. However, statement coverage alone may only lead
   to 10% fault detection, necessitating more rigorous approaches. While
@@ -212,24 +212,24 @@
   remain high. Identifying covered statements that are not checked by oracles
   (e.g., assertions) offers a cost-effective alternative; however, the lack of
   empirical evidence for selecting the appropriate Oracle Gap Calculation
-  Approach (OGCA) prevents developers from making informed choices.
+  Approach (OGCA) prevents developers from making informed choices. <br><br> 
   <em>Aims</em>: This knowledge-seeking study compares oracle gap
   characteristics determined by different OGCAs to assist devel- opers in
-  choosing the most valuable approach for their use cases. <em>Method</em>:
+  choosing the most valuable approach for their use cases. <br><br> <em>Method</em>:
   Using mixed-method empirical analysis, we conduct an in-depth evaluation of
   the oracle gaps produced using three OGCAs: Checked Coverage using a Dynamic
   Slicer (CCDS), Checked Coverage using an Observational Slicer (CCOS), and
   Pseudo-Tested Statement Identification (PTSI). Across 30 Java classes from
   six open-source projects, we report on a quantitative evaluation of gap
-  prominence, distribution, fault detection corre- lation and execution times,
+  prominence, distribution, fault detection correlation and execution times,
   as well as results from a qualitative manual inspection of the statement
-  types found in the oracle gaps. <em>Results</em>: The qualitative analysis
+  types found in the oracle gaps. <br><br> <em>Results</em>: The qualitative analysis
   showed data-loading statements, iteration statements and output updates to be
   most prominent in the oracle gaps. PTSI identified the oracle gaps with the
   lowest median mutation score (0.32), highlighting areas requiring more fault
   detection improvement compared to CCDS (0.76) and CCOS (0.50). PTSI also had
   the shortest median execution time (19.9 seconds), far quicker than both CCDS
-  (273.2 seconds) and CCOS (5957.1 seconds). <em>Conclusions</em>: PTSI quickly
+  (273.2 seconds) and CCOS (5957.1 seconds).<br><br> <em>Conclusions</em>: PTSI quickly
   reveals the priority testing areas for improved fault detection, making it an
   effective OGCA for developers to identify where tests fall short },
   data = {https://github.com/PseudoTested/esem-2025-replication-package},
