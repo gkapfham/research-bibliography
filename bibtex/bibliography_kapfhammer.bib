@@ -147,6 +147,61 @@
 
 % CONFERENCE PAPERS {{{
 
+@inproceedings{Foster2026,
+  author = {Michael Foster and Owain Parry and Michael Hilton and Gregory M.
+            Kapfhammer and Phil McMinn},
+  title     = {FlakeFighters: A {PyTest} plugin to detect flaky test failures},
+  booktitle = {Proceedings of the 41st International Conference on Automated
+               Software Engineering -- Tools and Datasets Track},
+  year      = {2026},
+  abstract  = {Flaky tests --- tests which non-deterministically pass and fail
+  against the same version of code --- pose a well-established painful issue
+  for developers due to the unpredictability of failures. The current state of
+  practice to detect and work around flaky tests is to simply rerun them.
+  However, this can erode confidence in failing test outcomes and represents a
+  significant waste of time and compute resources. A better solution is to
+  detect flaky tests based on static data (collectable without running any
+  tests) and/or execution data (collected by running the test suite) to
+  determine if a test failure has occurred due to flaky behaviour or a genuine
+  bug. Several such techniques have appeared in recent literature, but these
+  exist in isolation as prototype research tools, and typically only support
+  Java codebases. This paper presents FlakeFighters, an extensible pytest
+  extension that implements a "Swiss army knife" of flaky test classification
+  tools to help developers classify the underlying cause of failing tests as
+  genuine bugs or flakiness in Python codebases. We ran pytest with the
+  FlakeFighters extension on 23 failing workflows from the home-assistant/core
+  repository and found that it was able to identify all of the failing flaky
+  tests. A video demonstration of FlakeFighters can be found at
+  https://youtu.be/3J4odtgzQX0.},
+  tool = {https://github.com/test-flare/pytest-flakefighters},
+}
+
+@inproceedings{Maton2026b,
+  author = {Megan Maton and Gregory M. Kapfhammer and Phil McMinn},
+  title     = {multiplex: A modular LLM-based mutation framework},
+  booktitle = {Proceedings of the 41st International Conference on Automated
+               Software Engineering -- Tools and Datasets Track},
+  year      = {2026},
+  abstract  = {Mutation testing introduces synthetic defects into a program
+  under test to assess test suite adequacy. While recent advances in large
+  language models (LLMs) have led to more realistic and hard-to-kill mutants,
+  the field is currently dominated by single-purpose research prototypes that
+  tightly couple the mutant generation technique with the LLM provider and
+  build environment, thereby requiring mutation testing researchers to
+  re-implement techniques for empirical comparison. To address this challenge,
+  this paper introduces multiplex, a modular LLM-based mutation framework.
+  multiplex enables researchers to implement their own LLM-based mutant
+  generation (MG) modules to prototype or compare techniques, as well as
+  configure and create language, LLM or framework-specific modules for extended
+  study. In addition to providing an overview of the system design and
+  implementation, this paper demonstrates how researchers can use multiplex to
+  prototype and compare techniques, along with sharing experiments conducted
+  with multiplex and outlining future extensions. The tool is available at
+  https://github.com/LLM-Mutation/multiplex, and a video demonstration is
+  available at https://youtu.be/l-hj7Pmn3oo.},
+  tool = {https://github.com/LLM-Mutation/multiplex},
+}
+
 @inproceedings{Parry2026,
   author = {Owain Parry and Gregory M. Kapfhammer and Michael Hilton and Phil
             McMinn},
